@@ -1,0 +1,13 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="e2e2e2">
+    <Image Name="ImgPhoto" X="210" Y="8" Width="100" Height="80" Alpha="255"/>
+    <TextBlock Name="instance1794" X="6" Y="7" Width="100" Height="32" Alpha="255" Text="Nama" TextAlign="Left" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBox Name="txtNama" X="8" Y="29" Width="170" Height="32" Alpha="255" Text="anonym" TextAlign="Left" Font="4" FontColor="000000"/>
+    <TextBlock Name="instance2778" X="6" Y="62" Width="100" Height="32" Alpha="255" Text="Email" TextAlign="Left" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBox Name="txtEmail" X="8" Y="81" Width="170" Height="32" Alpha="255" Text="anonym@gmail.com" TextAlign="Left" Font="4" FontColor="000000"/>
+    <TextBlock Name="instance5221" X="6" Y="116" Width="100" Height="32" Alpha="255" Text="Twitter" TextAlign="Left" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBox Name="txtTwitter" X="8" Y="135" Width="170" Height="32" Alpha="255" Text="@nothing" TextAlign="Left" Font="4" FontColor="000000"/>
+    <Button Name="btnSubmit" X="229" Y="200" Width="80" Height="32" Alpha="255" Text="Submit" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnCancel" X="142" Y="200" Width="80" Height="32" Alpha="255" Text="Cancel" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+  </Window>
+</Glide>

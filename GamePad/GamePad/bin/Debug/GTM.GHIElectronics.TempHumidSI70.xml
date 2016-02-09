@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.TempHumidSI70</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.TempHumidSI70">
+            <summary>A TempHumidity module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.TakeMeasurement">
+            <summary>Obtains a single measurement.</summary>
+            <returns>The measurement.</returns>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.Measurement">
+            <summary>Result of a measurement.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.Measurement.ToString">
+            <summary>Provides a string representation of the instance.</summary>
+            <returns>A string describing the values contained in the object.</returns>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.Measurement.Temperature">
+            <summary>The measured temperature in degrees Celsius.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.Measurement.TemperatureFahrenheit">
+            <summary>The measured temperature in degrees Fahrenheit.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.TempHumidSI70.Measurement.RelativeHumidity">
+            <summary>The measured relative humidity.</summary>
+        </member>
+    </members>
+</doc>

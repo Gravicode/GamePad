@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.SDCard</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.SDCard">
+            <summary>An SDCard module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.SDCard.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The mainboard socket that has the module plugged into it.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.SDCard.Mount">
+            <summary>Attempts to mount the card.</summary>
+            <returns>Whether or not the card was successfully mounted.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.SDCard.Unmount">
+            <summary>Attempts to unmount the card.</summary>
+            <returns>Whether or not the card was successfully unmounted.</returns>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.SDCard.Mounted">
+            <summary>Raised when the file system of the SD card is mounted.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.SDCard.Unmounted">
+            <summary>Raised when the file system of the SD card is unmounted.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.SDCard.IsCardInserted">
+            <summary>Whether or not an SD card is inserted.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.SDCard.IsCardMounted">
+            <summary>Whether or not the SD card is mounted.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.SDCard.StorageDevice">
+            <summary>The StorageDevice for the currently mounted SD card.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.SDCard.MountedEventHandler">
+            <summary>Represents the delegate that is used for the Mounted event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="device">A storage device that can be used to access the SD card.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.SDCard.UnmountedEventHandler">
+            <summary>Represents the delegate that is used for the Unmounted event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+    </members>
+</doc>

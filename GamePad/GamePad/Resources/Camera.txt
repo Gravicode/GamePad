@@ -1,0 +1,10 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="e2e2e2">
+    <Image Name="ImgPhoto" X="0" Y="0" Width="320" Height="200" Alpha="255"/>
+    <Button Name="btnPrev" X="4" Y="205" Width="60" Height="32" Alpha="255" Text="&lt; Prev" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnNext" X="256" Y="205" Width="60" Height="32" Alpha="255" Text="Next >" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnPhoto" X="70" Y="205" Width="90" Height="32" Alpha="255" Text="Take Photo" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnSubmit" X="165" Y="205" Width="80" Height="32" Alpha="255" Text="Submit" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnBack" X="283" Y="7" Width="32" Height="32" Alpha="255" Text="X" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+  </Window>
+</Glide>

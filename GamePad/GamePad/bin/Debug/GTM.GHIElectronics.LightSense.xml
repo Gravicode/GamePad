@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.LightSense</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.LightSense">
+            <summary>A LightSense module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.LightSense.MAX_ILLUMINANCE">
+            <summary>The maximum amount of lux the sensor can detect before becoming saturated.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.LightSense.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.LightSense.ReadVoltage">
+            <summary>The voltage returned from the sensor.</summary>
+            <returns>The voltage value between 0.0 and 3.3</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.LightSense.ReadProportion">
+            <summary>The proportion returned from the sensor.</summary>
+            <returns>The value between 0.0 and 1.0</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.LightSense.GetIlluminance">
+            <summary>Returns the current sensor reading in lux.</summary>
+            <returns>A reading in lux between 0 and MAX_ILLUMINANCE.</returns>
+        </member>
+    </members>
+</doc>

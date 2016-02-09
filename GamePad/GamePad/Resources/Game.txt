@@ -1,0 +1,18 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="e2e2e2">
+    <Image Name="box1" X="10" Y="2" Width="90" Height="70" Alpha="255"/>
+    <Image Name="line1" X="0" Y="75" Width="320" Height="5" Alpha="255"/>
+    <Image Name="line2" X="0" Y="157" Width="320" Height="5" Alpha="255"/>
+    <Image Name="box4" X="10" Y="83" Width="90" Height="70" Alpha="255"/>
+    <Image Name="box7" X="10" Y="165" Width="90" Height="70" Alpha="255"/>
+    <Image Name="line3" X="105" Y="0" Width="5" Height="240" Alpha="255"/>
+    <Image Name="box2" X="115" Y="2" Width="90" Height="70" Alpha="255"/>
+    <Image Name="box5" X="115" Y="83" Width="90" Height="70" Alpha="255"/>
+    <Image Name="box8" X="115" Y="165" Width="90" Height="70" Alpha="255"/>
+    <Image Name="line4" X="210" Y="0" Width="5" Height="240" Alpha="255"/>
+    <Image Name="box3" X="220" Y="2" Width="90" Height="70" Alpha="255"/>
+    <Image Name="box6" X="220" Y="83" Width="90" Height="70" Alpha="255"/>
+    <Image Name="box9" X="220" Y="165" Width="90" Height="70" Alpha="255"/>
+    <Image Name="imgFull" X="0" Y="0" Width="320" Height="240" Alpha="255"/>
+  </Window>
+</Glide>

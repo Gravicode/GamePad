@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.Tunes</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Tunes">
+            <summary>A Tunes module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(System.Int32)">
+            <summary>Plays the given frequency indefinitely.</summary>
+            <param name="frequency">The frequency to play.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(Gadgeteer.Modules.GHIElectronics.Tunes.Tone)">
+            <summary>Plays the given tone indefinitely.</summary>
+            <param name="tone">The tone to play.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(System.Int32,System.Int32)">
+            <summary>Plays the given frequency for the given duration.</summary>
+            <param name="frequency">The frequency to play.</param>
+            <param name="duration">How long to play for.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote)">
+            <summary>Plays the given note.</summary>
+            <param name="note">The note to play.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote[])">
+            <summary>Plays the given notes.</summary>
+            <param name="notes">The notes to play.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Play(Gadgeteer.Modules.GHIElectronics.Tunes.Melody)">
+            <summary>Plays the melody.</summary>
+            <param name="melody">The melody to play.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.AddNote(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote)">
+            <summary>Adds a note to the playlist.</summary>
+            <param name="note">The note to be added.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Stop">
+            <summary>Stops playback.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Tunes.IsPlaying">
+            <summary>Whether or not there is something being played.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Tunes.Melody">
+            <summary>Represents a list of notes to play in sequence.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.#ctor">
+            <summary>Constructs a new instance.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.#ctor(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote[])">
+            <summary>Constructs a new instance.</summary>
+            <param name="notes">The list of notes to add to the melody.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.Add(System.Int32,System.Int32)">
+            <summary>Adds a new note to the list to play.</summary>
+            <param name="frequency">The frequency of the note.</param>
+            <param name="duration">The duration of the note in milliseconds.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.Add(Gadgeteer.Modules.GHIElectronics.Tunes.Tone,System.Int32)">
+            <summary>Adds a new note to the list to play.</summary>
+            <param name="tone">The tone of the note.</param>
+            <param name="duration">The duration of the note.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.Add(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote)">
+            <summary>Adds an existing note to the list to play.</summary>
+            <param name="note">The note to add.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Melody.Add(Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote[])">
+            <summary>Adds notes to the list to play.</summary>
+            <param name="notes">The list of notes to add to the melody.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Tunes.Tone">
+            <summary>Class that holds and manages notes that can be played.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.Rest">
+            <summary>A rest note</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.C2">
+            <summary>C in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.D2">
+            <summary>D in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.E2">
+            <summary>E in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.F2">
+            <summary>F in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.G2">
+            <summary>G in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.A2">
+            <summary>A in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.B2">
+            <summary>B in the 2nd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.C3">
+            <summary>C in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.D3">
+            <summary>D in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.E3">
+            <summary>E in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.F3">
+            <summary>F in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.G3">
+            <summary>G in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.A3">
+            <summary>A in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.B3">
+            <summary>B in the 3rd octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.C4">
+            <summary>C in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.D4">
+            <summary>D in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.E4">
+            <summary>E in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.F4">
+            <summary>F in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.G4">
+            <summary>G in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.A4">
+            <summary>A in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.B4">
+            <summary>B in the 4th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.C5">
+            <summary>C in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.D5">
+            <summary>D in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.E5">
+            <summary>E in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.F5">
+            <summary>F in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.G5">
+            <summary>G in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.A5">
+            <summary>A in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.B5">
+            <summary>B in the 5th octave.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.C6">
+            <summary>C in the 6th octave.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.#ctor(System.Double)">
+            <summary>Constructs a new instance.</summary>
+            <param name="frequency">The frequency of the tone.</param>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Tunes.Tone.Frequency">
+            <summary>Frequency of the note in hertz</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote">
+            <summary>Class that describes a musical note, containing a tone and a duration.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote.#ctor(Gadgeteer.Modules.GHIElectronics.Tunes.Tone,System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="tone">The tone of the note.</param>
+            <param name="duration">The duration that the note should be played in milliseconds.</param>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote.Tone">
+            <summary>The tone of the note.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.Tunes.MusicNote.Duration">
+            <summary>The duration of the note.</summary>
+        </member>
+    </members>
+</doc>

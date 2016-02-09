@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.BreadBoardX1</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.BreadBoardX1">
+            <summary>A BreadBoardX1 module for Microsoft .NET Gadgeteer.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The mainboard socket that has the module plugged into it.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateDigitalInput(Gadgeteer.Socket.Pin,Gadgeteer.SocketInterfaces.GlitchFilterMode,Gadgeteer.SocketInterfaces.ResistorMode)">
+            <summary>Creates a digital input on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <param name="glitchFilterMode">The glitch filter mode for the interface.</param>
+            <param name="resistorMode">The resistor mode for the interface.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateDigitalOutput(Gadgeteer.Socket.Pin,System.Boolean)">
+            <summary>Creates a digital output on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <param name="initialState">The initial state for the interface.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateDigitalIO(Gadgeteer.Socket.Pin,System.Boolean,Gadgeteer.SocketInterfaces.GlitchFilterMode,Gadgeteer.SocketInterfaces.ResistorMode)">
+            <summary>Creates a digital input/output on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <param name="initialState">The initial state for the interface.</param>
+            <param name="glitchFilterMode">The glitch filter mode for the interface.</param>
+            <param name="resistorMode">The resistor mode for the interface.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateInterruptInput(Gadgeteer.Socket.Pin,Gadgeteer.SocketInterfaces.GlitchFilterMode,Gadgeteer.SocketInterfaces.ResistorMode,Gadgeteer.SocketInterfaces.InterruptMode)">
+            <summary>Creates an interrupt input on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <param name="glitchFilterMode">The glitch filter mode for the interface.</param>
+            <param name="resistorMode">The resistor mode for the interface.</param>
+            <param name="interruptMode">The interrupt mode for the interface.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateAnalogInput(Gadgeteer.Socket.Pin)">
+            <summary>Creates an analog input on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreateAnalogOutput(Gadgeteer.Socket.Pin)">
+            <summary>Creates an analog output on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.CreatePwmOutput(Gadgeteer.Socket.Pin)">
+            <summary>Creates a pwm output on the given pin.</summary>
+            <param name="pin">The pin to create the interface on.</param>
+            <returns>The new interface.</returns>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.BreadBoardX1.Socket">
+            <summary>The mainboard socket which this module is plugged into.</summary>
+        </member>
+    </members>
+</doc>

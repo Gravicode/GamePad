@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.WiFiRS21</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.WiFiRS21">
+            <summary>A WiFiRS21 module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.WiFiRS21.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.WiFiRS21.UseThisNetworkInterface">
+            <summary>Opens the underlying network interface and assigns the NETMF networking stack.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.WiFiRS21.NetworkInterface">
+            <summary>The underlying network interface.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.WiFiRS21.IsNetworkConnected">
+            <summary>Whether or not the the module is connected to a wireless network. Make sure to also check the NetworkUp property to verify network state.</summary>
+        </member>
+    </members>
+</doc>

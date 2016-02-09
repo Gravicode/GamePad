@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GHI.Networking</name>
+    </assembly>
+    <members>
+        <member name="T:GHI.Networking.EthernetBuiltIn">
+            <summary>A driver for the built in ethernet controller. See https://www.ghielectronics.com/docs/69/ for more information.</summary>
+        </member>
+        <member name="T:GHI.Networking.BaseInterface">
+            <summary>The base class for all other network interfaces.</summary>
+        </member>
+        <member name="F:GHI.Networking.BaseInterface.disposed">
+            <summary>Whether or not the object has been disposed.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.#ctor(GHI.Networking.BaseInterface.InterfaceType)">
+            <summary>Constructs a new interface.</summary>
+            <param name="type">The type of the interface.</param>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.Finalize">
+            <summary>The finalizer.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.Dispose">
+            <summary>Disposes the object.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.RefreshNetworkInterface">
+            <summary>Reloads the NetworkInterface with current information.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.Open">
+            <summary>Opens the network interface.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.Close">
+            <summary>Closes the network interface.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.EnableStaticIP(System.String,System.String,System.String)">
+            <summary>Sets a static IP address for the interface.</summary>
+            <param name="ipAddress">The new IP address to set.</param>
+            <param name="subnetMask">The new subnet mask.</param>
+            <param name="gatewayAddress">The new gateway address.</param>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.EnableDhcp">
+            <summary>Enables DHCP on the interface.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.EnableStaticDns(System.String[])">
+            <summary>Sets static DNS addresses for the interface.</summary>
+            <param name="dnsAddresses">The new IP addresses to set.</param>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.EnableDynamicDns">
+            <summary>Enables dynamic DNS on the interface.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.ReleaseDhcpLease">
+            <summary>Releases the DHCP lease.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.RenewDhcpLease">
+            <summary>Renews the DHCP lease.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.Dispose(System.Boolean)">
+            <summary>Disposes the object.</summary>
+            <param name="disposing">Whether or not this is called from Dispose.</param>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.OnOpening">
+            <summary>Called when Open is called but before any native configuration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.OnOpened">
+            <summary>Called when Open is called but after any native configuration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.OnClosing">
+            <summary>Called when Close is called but before any native deconfiguration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.OnClosed">
+            <summary>Called when Close is called but after any native deconfiguration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.OnConstructed">
+            <summary>To be called after the most derived class is finished constructing.</summary>
+        </member>
+        <member name="M:GHI.Networking.BaseInterface.UpdateMacAddress(System.Byte[])">
+            <summary>Updates the MAC address of the interface.</summary>
+            <param name="address">The new address.</param>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.ActiveInterface">
+            <summary>
+            The network interface that is currently assigned to the TCP/IP stack. Only one interface can access the TCP/IP stack at a time.
+            </summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.NetworkAvailable">
+            <summary>Whether or not the network is available.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.Opened">
+            <summary>Whether or not the interface is opened and assigned to the TCP/IP stack.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.NetworkInterface">
+            <summary>The NetworkInterface object associated with this interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.PhysicalAddress">
+            <summary>The physical (MAC) address of the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.IPAddress">
+            <summary>The IP address of the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.GatewayAddress">
+            <summary>The gateway address of the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.SubnetMask">
+            <summary>The subnet mask of the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.IsDhcpEnabled">
+            <summary>Whether or not DHCP is enabled on the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.IsDynamicDnsEnabled">
+            <summary>Whether or not dynamic DNS is enabled on the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.DnsAddresses">
+            <summary>The DNS addresses of the interface.</summary>
+        </member>
+        <member name="P:GHI.Networking.BaseInterface.NetworkInterfaceType">
+            <summary>The type of the interface.</summary>
+        </member>
+        <member name="T:GHI.Networking.BaseInterface.InterfaceType">
+            <summary>The possible interface types.</summary>
+        </member>
+        <member name="F:GHI.Networking.BaseInterface.InterfaceType.EthernetBuiltIn">
+            <summary>Built in ethernet using a PHY chip.</summary>
+        </member>
+        <member name="F:GHI.Networking.BaseInterface.InterfaceType.EthernetENC28J60">
+            <summary>Ethernet from the ENC28J60.</summary>
+        </member>
+        <member name="F:GHI.Networking.BaseInterface.InterfaceType.WiFiRS9110">
+            <summary>RS9110 WiFi.</summary>
+        </member>
+        <member name="F:GHI.Networking.BaseInterface.InterfaceType.PPPSerialModem">
+            <summary>PPP serial modem</summary>
+        </member>
+        <member name="M:GHI.Networking.EthernetBuiltIn.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="P:GHI.Networking.EthernetBuiltIn.CableConnected">
+            <summary>Whether or not the cable is connected.</summary>
+        </member>
+        <member name="T:GHI.Networking.EthernetENC28J60">
+            <summary>A driver for the ENC28J60 SPI-based ethernet controller. See https://www.ghielectronics.com/docs/68/ for more information.</summary>
+        </member>
+        <member name="M:GHI.Networking.EthernetENC28J60.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>Creates a new instance.</summary>
+            <param name="spi">The SPI module the device is wired to.</param>
+            <param name="chipSelect">The chip select the device is using.</param>
+            <param name="externalInterrupt">The external interrupt pin the device is using.</param>
+            <remarks>Make sure you tie the reset pin to a proper state if you do not supply a pin here.</remarks>
+        </member>
+        <member name="M:GHI.Networking.EthernetENC28J60.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>Creates a new instance.</summary>
+            <param name="spi">The SPI module the device is wired to.</param>
+            <param name="chipSelect">The chip select the device is using.</param>
+            <param name="externalInterrupt">The external interrupt pin the device is using.</param>
+            <param name="reset">The reset pin the device is using.</param>
+        </member>
+        <member name="M:GHI.Networking.EthernetENC28J60.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,System.Int32)">
+            <summary>Creates a new instance.</summary>
+            <param name="spi">The SPI module the device is wired to.</param>
+            <param name="chipSelect">The chip select the device is using.</param>
+            <param name="externalInterrupt">The external interrupt pin the device is using.</param>
+            <param name="reset">The reset pin the device is using.</param>
+            <param name="clockRate">The SPI clock rate to use in kilohertz.</param>
+        </member>
+        <member name="M:GHI.Networking.EthernetENC28J60.Dispose(System.Boolean)">
+            <summary>Disposes the object.</summary>
+            <param name="disposing">Whether or not this is called from Dispose.</param>
+        </member>
+        <member name="P:GHI.Networking.EthernetENC28J60.CableConnected">
+            <summary>Whether or not the cable is connected.</summary>
+        </member>
+        <member name="T:GHI.Networking.PPPSerialModem">
+            <summary>A driver for the built in PPP serial modem.</summary>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.#ctor(System.IO.Ports.SerialPort)">
+            <summary>Creates a new instance.</summary>
+            <param name="port">The port to communicate over.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect">
+            <summary>Connects to the remote endpoint.</summary>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect(System.Boolean)">
+            <summary>Connects to the remote endpoint.</summary>
+            <param name="listenForConnection">Whether or not to wait for an LCP packet from the remote endpoint instead of sending our own.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect(System.String)">
+            <summary>Connects to the remote endpoint.</summary>
+            <param name="ipAddress">The IP address of this device.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect(System.String,System.Boolean)">
+            <summary>Connects to the remote endpoint.</summary>
+            <param name="ipAddress">The IP address of this device.</param>
+            <param name="listenForConnection">Whether or not to wait for an LCP packet from the remote endpoint instead of sending our own.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect(GHI.Networking.PPPSerialModem.AuthenticationType,System.String,System.String)">
+            <summary>Connects to the remote endpoint using the given credentials.</summary>
+            <param name="authenticationType">The type of authentication to use.</param>
+            <param name="username">The username to connect with.</param>
+            <param name="password">The password to connect with.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Connect(GHI.Networking.PPPSerialModem.AuthenticationType,System.String,System.String,System.String,System.Boolean)">
+            <summary>Connects to the remote endpoint using the given credentials.</summary>
+            <param name="authenticationType">The type of authentication to use.</param>
+            <param name="username">The username to connect with.</param>
+            <param name="password">The password to connect with.</param>
+            <param name="ipAddress">The IP address of this device.</param>
+            <param name="listenForConnection">Whether or not to wait for an LCP packet from the remote endpoint instead of sending our own.</param>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.Disconnect">
+            <summary>Disconnects from the remote endpoint.</summary>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.OnOpening">
+            <summary>Called when Open is called but before any native configuration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.PPPSerialModem.OnClosing">
+            <summary>Called when Close is called but before any native deconfiguration takes place.</summary>
+        </member>
+        <member name="P:GHI.Networking.PPPSerialModem.LinkConnected">
+            <summary>Whether or not the link is connected.</summary>
+        </member>
+        <member name="T:GHI.Networking.PPPSerialModem.AuthenticationType">
+            <summary>The possible types of authentication for a PPP connection.</summary>
+        </member>
+        <member name="F:GHI.Networking.PPPSerialModem.AuthenticationType.None">
+            <summary>No authentication.</summary>
+        </member>
+        <member name="F:GHI.Networking.PPPSerialModem.AuthenticationType.Any">
+            <summary>Either PAP or CHAP authentication.</summary>
+        </member>
+        <member name="F:GHI.Networking.PPPSerialModem.AuthenticationType.Pap">
+            <summary>PAP authentication.</summary>
+        </member>
+        <member name="F:GHI.Networking.PPPSerialModem.AuthenticationType.Chap">
+            <summary>CHAP authentication.</summary>
+        </member>
+        <member name="T:GHI.Networking.PPPSerialModem.ConnectionFailedException">
+            <summary>The exception thrown when the connection fails due to an unknown reason.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110">
+            <summary>
+            A driver for the RS9110-N-11-22-04, RS9110-N-11-22-05 and RS9110-N-11-21-01 SPI-based WiFi modules. See
+            https://www.ghielectronics.com/docs/105/ for more information.
+            </summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>Creates a new WiFi instance on the given pins.</summary>
+            <param name="spi">The SPI module to which the chip is connected.</param>
+            <param name="chipSelect">The chip select pin to use.</param>
+            <param name="externalInterrupt">The external interrupt pin to use.</param>
+            <remarks>Make sure you tie the reset pin to a proper state if you do not supply a pin here.</remarks>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>Creates a new WiFi instance on the given pins.</summary>
+            <param name="spi">The SPI module to which the chip is connected.</param>
+            <param name="chipSelect">The chip select pin to use.</param>
+            <param name="externalInterrupt">The external interrupt pin to use.</param>
+            <param name="reset">The reset pin to use.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.#ctor(Microsoft.SPOT.Hardware.SPI.SPI_module,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,System.Int32)">
+            <summary>Creates a new WiFi instance on the given pins.</summary>
+            <param name="spi">The SPI module to which the chip is connected.</param>
+            <param name="chipSelect">The chip select pin to use.</param>
+            <param name="externalInterrupt">The external interrupt pin to use.</param>
+            <param name="reset">The reset pin to use.</param>
+            <param name="clockRate">The SPI clock rate to use in kilohertz.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Scan">
+            <summary>Scans for all WiFi networks.</summary>
+            <returns>The found access points.</returns>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Scan(System.Int32)">
+            <summary>Scans for WiFi networks on the given channel with any SSID.</summary>
+            <param name="channel">The channel number from 1 to 14 on which to scan. (0 to scan all the channels).</param>
+            <returns>The found access points.</returns>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Scan(System.String)">
+            <summary>Scans for WiFi networks with the given SSID on any channel.</summary>
+            <param name="ssid">The SSID to for which to search. An empty string will scan for all networks.</param>
+            <returns>The found access points.</returns>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Scan(System.Int32,System.String)">
+            <summary>Scans for a WiFi networks with the given SSID on the given channel.</summary>
+            <param name="channel">The channel number from 1 to 14 on which to scan. (0 to scan all the channels).</param>
+            <param name="ssid">The SSID to for which to search. An empty string will scan for all networks.</param>
+            <returns>The found access points.</returns>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Join(System.String)">
+            <summary>Attemps to join the network with the given SSID. If more than one network with that SSID is found an exception is thrown.</summary>
+            <param name="ssid">The SSID to join.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Join(System.String,System.String)">
+            <summary>
+            Attemps to join the network with the given SSID and key. If more than one network with that SSID is found an exception is thrown.
+            </summary>
+            <param name="ssid">The SSID to join.</param>
+            <param name="key">The required key.</param>
+            <remarks>
+            For WPA and WPA2, the key is a plain-text string of the key. For example: "mypassword". For WEP, the key is in hex format without the
+            leading 0x. For example: a key of 0xE8430A5EDB will use "E8430A5EDB".
+            </remarks>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Join(GHI.Networking.WiFiRS9110.NetworkParameters)">
+            <summary>Joins a wireless network with the given parameters.</summary>
+            <param name="network">The parameters of the wireless network to join.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.StartAdHocNetwork(GHI.Networking.WiFiRS9110.NetworkParameters)">
+            <summary>Creates an Ad-Hoc network that lets other nodes connect via peer-to-peer to this WiFi module.</summary>
+            <param name="network">The network parameters that define the Ad-Hoc network.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Disconnect">
+            <summary>Disconnects from a connected network.</summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.UpdateFirmware">
+            <summary>Updates the firmware on the RS9110 in the rare case that it is suspected of being corrupt.</summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.Dispose(System.Boolean)">
+            <summary>Disposes the object.</summary>
+            <param name="disposing">Whether or not this is called from Dispose.</param>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.OnOpening">
+            <summary>Called when Open is called but before any native configuration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.OnOpened">
+            <summary>Called when Open is called but after any native configuration takes place.</summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.OnClosing">
+            <summary>Called when Close is called but before any native deconfiguration takes place.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.ActiveNetwork">
+            <summary>The current active, connected, network.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.OperationTimeout">
+            <summary>How long to wait before failing an operation.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.LinkConnected">
+            <summary>Whether or not a wireless connection is established.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.PhysicalAddress">
+            <summary>The physical (MAC) address of the interface.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.SecurityMode">
+            <summary>WiFi security modes.</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.SecurityMode.Open">
+            <summary>No security or encryption</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.SecurityMode.Wpa">
+            <summary>WiFi Protected Access</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.SecurityMode.Wpa2">
+            <summary>WiFi Protected Access II</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.SecurityMode.Wep">
+            <summary>Wired Equivalent Privacy</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.NetworkType">
+            <summary>WiFi network types</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.NetworkType.AdHoc">
+            <summary>Ad-hoc (IBSS).</summary>
+        </member>
+        <member name="F:GHI.Networking.WiFiRS9110.NetworkType.AccessPoint">
+            <summary>Wireless access point (Infrastructure).</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.HardwareTimeoutException">
+            <summary>The exception thrown when an operation times out.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.HardwareFailureException">
+            <summary>The exception thrown when an operation fails.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.JoinException">
+            <summary>The exception thrown when a network join call fails.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.OldFirmwareException">
+            <summary>The exception thrown when the firmware version of the WiFi chip is out of date.</summary>
+        </member>
+        <member name="T:GHI.Networking.WiFiRS9110.NetworkParameters">
+            <summary>WiFi Network Information.</summary>
+        </member>
+        <member name="M:GHI.Networking.WiFiRS9110.NetworkParameters.#ctor">
+            <summary>Constructs a new instance.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.Channel">
+            <summary>The channel number.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.Rssi">
+            <summary>The received signal strength indication in -dB units.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.Ssid">
+            <summary>The service set identifier (the WiFi network name).</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.Key">
+            <summary>The pre shared security key for the network.</summary>
+            <remarks>
+            For WPA and WPA2, the key is a plain-text string of the key. For example: "mypassword". For WEP, the key is in hex format without the
+            leading 0x. For example: a key of 0xE8430A5EDB will use "E8430A5EDB".
+            </remarks>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.PhysicalAddress">
+            <summary>The base station's MAC address.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.SecurityMode">
+            <summary>The security mode.</summary>
+        </member>
+        <member name="P:GHI.Networking.WiFiRS9110.NetworkParameters.NetworkType">
+            <summary>The network type.</summary>
+        </member>
+    </members>
+</doc>

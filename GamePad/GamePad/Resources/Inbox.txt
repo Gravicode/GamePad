@@ -1,0 +1,13 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="e2e2e2">
+    <TextBlock Name="instance3507" X="4" Y="5" Width="100" Height="32" Alpha="255" Text="Select Message" TextAlign="Left" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <Dropdown Name="cmbInbox" X="6" Y="25" Width="300" Height="32" Alpha="255" Text="Select:" Font="4" FontColor="000000"/>
+    <TextBox Name="txtMessage" X="6" Y="62" Width="300" Height="45" Alpha="255" Text="" TextAlign="Left" Font="4" FontColor="000000"/>
+    <TextBlock Name="instance5618" X="5" Y="105" Width="100" Height="32" Alpha="255" Text="Reply" TextAlign="Left" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBox Name="txtReply" X="8" Y="162" Width="300" Height="36" Alpha="255" Text="" TextAlign="Left" Font="4" FontColor="000000"/>
+    <Button Name="btnSend" X="227" Y="204" Width="80" Height="32" Alpha="255" Text="Send" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnBack" X="9" Y="204" Width="80" Height="32" Alpha="255" Text="Back" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="btnClear" X="143" Y="204" Width="80" Height="32" Alpha="255" Text="Clear" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <TextBox Name="txtNoReply" X="8" Y="126" Width="300" Height="32" Alpha="255" Text="08174810345" TextAlign="Left" Font="4" FontColor="000000"/>
+  </Window>
+</Glide>

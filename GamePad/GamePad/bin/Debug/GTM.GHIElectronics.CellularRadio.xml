@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.CellularRadio</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio">
+            <summary>A CellularRadio module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.UseThisNetworkInterface(System.String)">
+            <summary>Opens the underlying network interface and assigns the NETMF networking stack.</summary>
+            <param name="apn">The APN to use.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.UseThisNetworkInterface(System.String,System.String,System.String,GHI.Networking.PPPSerialModem.AuthenticationType)">
+            <summary>Opens the underlying network interface and assigns the NETMF networking stack.</summary>
+            <param name="apn">The APN to use.</param>
+            <param name="username">The username to connect with.</param>
+            <param name="password">The password to connect with.</param>
+            <param name="authenticationType">The authentication type.</param>
+            <remarks>When using this overload, "CONNECT" is the assumed response when PPP is ready after the below commands are sent:
+            AT+CGDCONT=1,"IP","[APN]"
+            ATDT*99***1#
+            </remarks>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.UseThisNetworkInterface(System.String,System.String,GHI.Networking.PPPSerialModem.AuthenticationType,System.String,System.String[])">
+            <summary>Opens the underlying network interface and assigns the NETMF networking stack.</summary>
+            <param name="username">The username to connect with.</param>
+            <param name="password">The password to connect with.</param>
+            <param name="authenticationType">The authentication type.</param>
+            <param name="initializationResponse">The response to look for that signals the PPP interface is ready to be initialized.</param>
+            <param name="initializationCommands">The AT commands to send to the device to prepare it for PPP.</param>
+            <remarks>If there are no expected response or initialization commands supplied, the PPP interface will attempt to immediately initialize.</remarks>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.PowerOn">
+            <summary>Powers on the module with default initialization commands.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.PowerOn(System.String[])">
+            <summary>Power on the module.</summary>
+            <param name="initializationCommands">The initialization commands to send after power up.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.PowerOff">
+            <summary>Powers off the module.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Reset">
+            <summary>Resets module.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SendATCommand(System.String)">
+            <summary>Sends an AT command to the module without waiting for a response. It automatically appends the carriage return.</summary>
+            <param name="atCommand">The AT command. See SIM900_ATC_V1.00 for reference.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SendATCommand(System.String,System.String)">
+            <summary>Sends an AT command to the module not returning until the expected response is received. It automatically appends the carriage return.</summary>
+            <param name="atCommand">The AT command. See SIM900_ATC_V1.00 for reference.</param>
+            <param name="expectedResponse">What the response to this command should start with.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SendATCommand(System.String,System.String,System.Int32)">
+            <summary>Sends an AT command to the module not returning until the expected response is received or the timeout expires. It automatically appends the carriage return.</summary>
+            <param name="atCommand">The AT command. See SIM900_ATC_V1.00 for reference.</param>
+            <param name="expectedResponse">What the response to this command should start with.</param>
+            <param name="timeout">How long to wait for the response.</param>
+            <returns>True if the command was received, false if it timed out.</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SendSms(System.String,System.String)">
+            <summary>Send an SMS.</summary>
+            <param name="number">The phone number to send to.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestSms(System.Int32,System.Boolean)">
+            <summary>Requests to the message at the specified position. Message is returned in the SmsReceived event.</summary>
+            <param name="position">The position in memory where the message is stored.</param>
+            <param name="markAsRead">Whether unread messages will be marked as read.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.DeleteSms(System.Int32)">
+            <summary>Delete an SMS.</summary>
+            <param name="position">The position in memory where the message is stored.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestSmsList(Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState)">
+            <summary>Requests every SMS.</summary>
+            <param name="state">The state of the message to filter by.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.DeleteAllSms">
+            <summary>Deletes all SMSs stored in the SIM card.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.PickUp">
+            <summary>Picks up an incoming voice call.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.HangUp">
+            <summary>Hangs up an active call.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Dial(System.String)">
+            <summary>Dials a number in order to start a voice call.</summary>
+            <param name="number">Number to be called</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Redial">
+            <summary>Redials the last number dialed.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestPhoneActivity">
+            <summary>Raises the PhoneActivityRequested event, which contains the activity the phone is currently engaged in.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SaveContact(System.String,System.String)">
+            <summary>Adds an entry to the SIM card's phonebook.</summary>
+            <param name="number">The phone number.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SaveContact(Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact)">
+            <summary>Adds an entry to the SIM card's phonebook.</summary>
+            <param name="contact">Contact object containing the number and name.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SaveContact(System.Int32,System.String,System.String)">
+            <summary>Adds an entry to the SIM card's phonebook.</summary>
+            <param name="index">Index of the entry where the contact is going to be stored.</param>
+            <param name="number">The phone number.</param>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SaveContact(System.Int32,Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact)">
+            <summary>Adds an entry to the SIM card's phonebook.</summary>
+            <param name="index">Index of the entry where the contact is going to be stored.</param>
+            <param name="contact">Contact object containing the number and name.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestContact(System.Int32)">
+            <summary>Raises the ContactRequested event, which contains the contact stored in the specified position.</summary>
+            <param name="index">Index of the phonebook entry where the contact is stored.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.DeleteContact(System.Int32)">
+            <summary>Delete the contact at the specified position</summary>
+            <param name="index">Index of the phonebook entry where the contact is stored.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestClock">
+            <summary>Sends a request to get the module's date and time</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SetClock(System.DateTime)">
+            <summary>Sets the module's internal date and time</summary>
+            <param name="clock"></param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestImei">
+            <summary>Raises the ImeiRequested event which contains the module international mobile equipment identification number.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestSignalStrength">
+            <summary>Raises the SignalStrengthRequested event which contains the strength of the signal.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestOperator">
+            <summary>Raises the OperatorRequested event which contains the name of the operator, if the module is connected to a network.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.RequestPinState">
+            <summary>Raises the PinStateRequested event which contains the current state of the PIN.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.AttachGprs(System.String,System.String,System.String)">
+            <summary>Attaches to the GPRS network.</summary>
+            <param name="accessPointName">The APN.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.DetachGprs">
+            <summary>Detach from the GPRS network.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.ConnectTcp(System.String,System.Int32)">
+            <summary>Connects to a TCP server.</summary>
+            <param name="server">IP address of the server.</param>
+            <param name="port">Port on the server.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.DisconnectTcp">
+            <summary>Disconnects from TCP server.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.ConfigureTcpServer(System.Int32)">
+            <summary>Configure the module as a TCP server.</summary>
+            <param name="port">The port to listen on.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.SendTcpData(System.String)">
+            <summary>Sends data over a TCP connection.</summary>
+            <param name="data">Data to be sent</param>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinStateRequested">
+            <summary>Raised when the pin state is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.GsmNetworkRegistrationChanged">
+            <summary>Raised when the module emits a network registration message.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.GprsNetworkRegistrationChanged">
+            <summary>Raised when the module emits a network registration message.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsReceived">
+            <summary>Raised when the module receives a new SMS.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.IncomingCall">
+            <summary>Raised when the module detects an incoming call.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivityRequested">
+            <summary>Raised when the module receives a phone activity message.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.ContactRequested">
+            <summary>Raised when a contact is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.ClockRequested">
+            <summary>Raised when the clock is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.ImeiRequested">
+            <summary>Raised when the IMEI is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrengthRequested">
+            <summary>Raised when the signal strength is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.OperatorRequested">
+            <summary>Raised when the operator is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsListReceived">
+            <summary>Raised when the sms list is requested.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEnded">
+            <summary>Raised when the call ends.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallConnected">
+            <summary>Raised when the call is connected.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.GprsAttached">
+            <summary>Raised when the GPRS is attached.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.LineReceived">
+            <summary>Raised when a line is received. Useful for debugging.</summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CellularRadio.LineSent">
+            <summary>Raised when a line is sent. Useful for debugging.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkInterface">
+            <summary>The underlying network interface.</summary>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.CellularRadio.IsNetworkConnected">
+            <summary>Whether or not the network is connected. Make sure to also check the NetworkUp property to verify network state.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinStateRequestedHandler">
+            <summary>Represents the delegate used for the PinStateRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="pinState">Current state of the PIN</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.GsmNetworkRegistrationChangedHandler">
+            <summary>Represents the delegate used for the GsmNetworkRegistrationChanged event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="networkState">Current state of the GSM network registration</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.GprsNetworkRegistrationChangedHandler">
+            <summary>Represents the delegate used for the GprsNetworkRegistrationChanged event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="networkState">Current state of the GPRS network registration</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsReceivedHandler">
+            <summary>Represents the delegate used for the SmsReceived event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="message">Object containing the SMS</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.IncomingCallHandler">
+            <summary>Represents the delegate used for the IncomingCall event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="caller">Number of the caller</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsRequestedHandler">
+            <summary>Represents the delegate used for the SmsRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="message">SMS that was requested</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivityRequestedHandler">
+            <summary>Represents the delegate used for the PhoneActivityRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="activity">Current activity in which the phone is engaged</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.ContactOpenRequested">
+            <summary>Represents the delegate used for the ContactRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="contact">Contact object with the requested phonebook entry</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.ClockRequestedHandler">
+            <summary>Represents the delegate used for the ClockRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="clock">Module's date and time</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.ImeiRequestedHandler">
+            <summary>Represents the delegate used for the ImeiRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="imei">Module's International Mobile Equipment Identification number</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrengthRequestedHandler">
+            <summary>Represents the delegate used for the SignalStrengthRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="signalStrength">Strength of the signal</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.OperatorRequestedHandler">
+            <summary>Represents the delegate used for the OperatorRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="operatorName">Name of the operator to which the module is connected. It is null if the module is not connected to any operator.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsListRequestedHandler">
+            <summary>Represents the delegate used for the SmsListRequested event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="smsList">Strength of the signal</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEndedHandler">
+            <summary>Represents the delegate used for the CallEnded event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="reason">The reason the call has ended</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallConnectedHandler">
+            <summary>Represents the delegate used for the CallConnected event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="number">Number to which the module is connected</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.GprsAttachedHandler">
+            <summary>Represents the delegate used for the GprsAttached event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="ipAddress">Number to which the module is connected</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.LineReceivedHandler">
+            <summary>Represents the delegate used for the LineReceived event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="line">The line that was received.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.LineSentHandler">
+            <summary>Represents the delegate used for the LineSent event.</summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="line">The line that was sent.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState">
+            <summary>Possible states of network registration.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.NotSearching">
+            <summary>The module couldn't find a network.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.Registered">
+            <summary>The module is registered to a network.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.Searching">
+            <summary>The module is searching for a network.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.RegistrationDenied">
+            <summary>The module tried to register to a network, but it was denied.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.Unknown">
+            <summary>Unknown failure.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.Roaming">
+            <summary>The module is roaming.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.NetworkRegistrationState.Error">
+            <summary>There was an error.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState">
+            <summary>Possible states of the SIM card.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.Ready">
+            <summary>The SIM is unlocked and ready to be used.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.Pin">
+            <summary>The SIM is locked waiting for the PIN.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.Puk">
+            <summary>The SIM is locked waiting for the PUK.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.PhPin">
+            <summary>The SIM is waiting for phone to SIM card (antitheft).</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.PhPuk">
+            <summary>The SIM is waiting for phone to SIM PUK (antitheft).</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.Pin2">
+            <summary>The SIM is waiting for second PIN.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.Puk2">
+            <summary>The SIM is waiting for second PUK.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PinState.NotPresent">
+            <summary>The SIM is not present.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState">
+            <summary>Possible states for a text message.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState.ReceivedUnread">
+            <summary>Messages that were received and read</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState.ReceivedRead">
+            <summary>Messages that were received but not yet read</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState.StoredUnsent">
+            <summary>Messages that were created but not yet sent</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState.StoredSent">
+            <summary>Messages that were created and sent</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState.All">
+            <summary>All messages</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity">
+            <summary>Possible states of a call.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity.Ready">
+            <summary>The phone is not calling or being called.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity.Ringing">
+            <summary>The phone is ringing.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity.CallInProgress">
+            <summary>There is an active voice all.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity.Unknown">
+            <summary>The module is in an unknown state.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.PhoneActivity.CommLineBusy">
+            <summary>The communication line with the module is busy.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength">
+            <summary>Possible values of the strength of a signal.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.VeryWeak">
+            <summary>- 115dBm or less.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.Weak">
+            <summary>- 111dBm.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.Strong">
+            <summary>- 110 to -54dBm.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.VeryStrong">
+            <summary>- 52dBm or greater.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.Unknown">
+            <summary>Not known or undetectable.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.SignalStrength.Error">
+            <summary>There was an error in the response from the module.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEndReason">
+            <summary>Possible reasons for a call to be ended.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEndReason.NoDialTone">
+            <summary>No dial tone was found.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEndReason.NoCarrier">
+            <summary>No carrier was found.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.CallEndReason.Busy">
+            <summary>The line is busy.</summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms">
+            <summary>Represents an SMS.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.PhoneNumber">
+            <summary>The phone number.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.Message">
+            <summary>The message text.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.Status">
+            <summary>The status of the message.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.Timestamp">
+            <summary>The timestamp of the message.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.Index">
+            <summary>The index of the message in the SIM card's memory</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.#ctor">
+            <summary>Creates a new instance.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Sms.#ctor(System.String,System.String,Gadgeteer.Modules.GHIElectronics.CellularRadio.SmsState,System.DateTime)">
+            <summary>Creates a new instance.</summary>
+            <param name="number">The phone number.</param>
+            <param name="text">The message text.</param>
+            <param name="state">The status of the message.</param>
+            <param name="timestamp">The timestamp of the message.</param>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact">
+            <summary>Represents an entry in the phonebook.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact.PhoneNumber">
+            <summary>The phone number of the contact.</summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact.Name">
+            <summary>The name of the contact.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CellularRadio.Contact.#ctor(System.String,System.String)">
+            <summary>Creates a new instance.</summary>
+            <param name="number">The phone number.</param>
+            <param name="name">The name.</param>
+        </member>
+    </members>
+</doc>

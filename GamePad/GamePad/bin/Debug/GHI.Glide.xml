@@ -1,0 +1,3542 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GHI.Glide</name>
+    </assembly>
+    <members>
+        <member name="T:GHI.Glide.Colors">
+            <summary>
+            The Colors class contains a list of defined colors.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Black">
+            <summary>
+            Black
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Blue">
+            <summary>
+            Blue
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Brown">
+            <summary>
+            Brown
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.DarkGray">
+            <summary>
+            Dark Gray
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Fuchsia">
+            <summary>
+            Fushia
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Gray">
+            <summary>
+            Gray
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Green">
+            <summary>
+            Green
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.LightGray">
+            <summary>
+            Light Gray
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Orange">
+            <summary>
+            Orange
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Red">
+            <summary>
+            Red
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Teal">
+            <summary>
+            Teal
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.Yellow">
+            <summary>
+            Yellow
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Colors.White">
+            <summary>
+            White
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Direction">
+            <summary>
+            Direction
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Direction.Left">
+            <summary>
+            Left
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Direction.Right">
+            <summary>
+            Right
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Direction.Up">
+            <summary>
+            Up
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Direction.Down">
+            <summary>
+             Down
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.HorizontalAlignment">
+            <summary>
+            Horizontal Alignment
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.HorizontalAlignment.Left">
+            <summary>
+            Left
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.HorizontalAlignment.Center">
+            <summary>
+            Center
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.HorizontalAlignment.Right">
+            <summary>
+            Right
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.VerticalAlignment">
+            <summary>
+            Vertical Alignment
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.VerticalAlignment.Top">
+            <summary>
+            Top
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.VerticalAlignment.Middle">
+            <summary>
+            Middle
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.VerticalAlignment.Bottom">
+            <summary>
+            Bottom
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.ModalButtons">
+            <summary>
+            Modal Buttons
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.Ok">
+            <summary>
+            Ok
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.OkCancel">
+            <summary>
+            Ok, Cancel
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.AbortRetryIgnore">
+            <summary>
+            Abort, Retry, Ignore
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.YesNo">
+            <summary>
+            Yes, No
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.YesNoCancel">
+            <summary>
+            Yes, No, Cancel
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalButtons.RetryCancel">
+            <summary>
+            Retry, Cancel
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.ModalResult">
+            <summary>
+            Modal Result
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Ok">
+            <summary>
+            Ok
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Cancel">
+            <summary>
+            Cancel
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Abort">
+            <summary>
+            Abort
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Retry">
+            <summary>
+            Retry
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Ignore">
+            <summary>
+            Ignore
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.Yes">
+            <summary>
+            Yes
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.ModalResult.No">
+            <summary>
+            No
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.MessageBoxManager">
+            <summary>
+            Manages the MessageBox component.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.#ctor">
+            <summary>
+            Creates a new MessageBoxManager.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Show(System.String)">
+            <summary>
+            Shows a MessageBox on screen.
+            </summary>
+            <param name="message">Message</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Show(System.String,System.String)">
+            <summary>
+            Shows a MessageBox on screen.
+            </summary>
+            <param name="message">Message</param>
+            <param name="title">Title</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Show(System.String,System.String,GHI.Glide.ModalButtons)">
+            <summary>
+            Shows a MessageBox on screen.
+            </summary>
+            <param name="message">Message</param>
+            <param name="title">Title</param>
+            <param name="buttons">MessageBoxButtons constant.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Hide">
+            <summary>
+            Hides the on screen MessageBox.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Update(System.String)">
+            <summary>
+            Updates the MessageBox message.
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:GHI.Glide.MessageBoxManager.Update(System.String,System.String)">
+            <summary>
+            Updates the MessageBox message and title.
+            </summary>
+            <param name="message">Message</param>
+            <param name="title">Title</param>
+        </member>
+        <member name="F:GHI.Glide.MessageBoxManager.IsOpen">
+            <summary>
+            Indicates whether or not the message box is open.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.DataGrid">
+            <summary>
+            The DataGrid component is a list-based component that provides a grid of rows and columns.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Display.DisplayObject">
+            <summary>
+            The DisplayObject is the base class for all objects.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Name">
+            <summary>
+            Indicates the instance name of the DisplayObject.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Alpha">
+            <summary>
+            Indicates the alpha transparency value of the object specified.
+            </summary>
+            <remarks>Valid values are 0 (fully transparent) and 255 (fully opaque). Default value is 255.</remarks>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Visible">
+            <summary>
+            Indicates whether or not the DisplayObject is visible.
+            </summary>
+            <remarks>Invisible objects are not drawn nor do they receive touch events.</remarks>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Enabled">
+            <summary>
+            Indicates whether or not the DisplayObject is enabled.
+            </summary>
+            <remarks>Disabled objects do not receive touch events.</remarks>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Interactive">
+            <summary>
+            Indicates whether or not the DisplayObject is interactive.
+            </summary>
+            <remarks>Non-interactive objects do not receive touch events. This allows disabled objects to keep their state.</remarks>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Tag">
+            <summary>
+            Object that contains data about the display object.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Parent">
+            <summary>
+            Indicates the DisplayObjectContainer object that contains this display object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.TriggerTapEvent(System.Object)">
+            <summary>
+            Triggers a tap event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.TapEventIsNull">
+            <summary>
+            Is TapEvent null?
+            </summary>
+            <returns>True if TapEvent is null; false otherwise.</returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.TriggerGestureEvent(System.Object,GHI.Glide.TouchGestureEventArgs)">
+            <summary>
+            Triggers a gesture event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Touch gesture event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.Render">
+            <summary>
+            Renders this display object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.Render(Microsoft.SPOT.Bitmap)">
+            <summary>
+            Renders this display object on a specified bitmap.
+            </summary>
+            <param name="bitmap"></param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.Invalidate">
+            <summary>
+            Renders this display object and flushes it to the screen.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles touch down events.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles touch up events.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.OnTouchMove(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles touch move events.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.OnTouchGesture(GHI.Glide.TouchGestureEventArgs)">
+            <summary>
+            Handles touch gesture events.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObject.Dispose">
+            <summary>
+            Disposes all disposable objects in this display object.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.X">
+            <summary>
+            Indicates the x coordinate of the DisplayObject instance relative to the local coordinates of the parent DisplayObjectContainer.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Display.DisplayObject.Y">
+            <summary>
+            Indicates the y coordinate of the DisplayObject instance relative to the local coordinates of the parent DisplayObjectContainer.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.Display.DisplayObject.TapEvent">
+            <summary>
+            Tap event.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.Display.DisplayObject.GestureEvent">
+            <summary>
+            Gesture event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObject.Width">
+            <summary>
+            Indicates the width of the display object, in pixels.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObject.Height">
+            <summary>
+            Indicates the height of the display object, in pixels.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObject.Rect">
+            <summary>
+            Indicates the rectangle bounds of this display object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new DataGrid component.
+            </summary>
+            <param name="name">name</param>
+            <param name="alpha">alpha</param>
+            <param name="x">x</param>
+            <param name="y">y</param>
+            <param name="width">width</param>
+            <param name="rowHeight">rowHeight</param>
+            <param name="rowCount">rowCount</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.TriggerTapCellEvent(System.Object,GHI.Glide.TapCellEventArgs)">
+            <summary>
+            Triggers a tap cell event.
+            </summary>
+            <param name="sender">Object associated with this event.</param>
+            <param name="args">Tap cell event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.Render">
+            <summary>
+            Renders the DataGrid onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.OnTouchMove(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch move event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.AddColumn(GHI.Glide.UI.DataGridColumn)">
+            <summary>
+            Adds a column.
+            </summary>
+            <param name="dataGridColumn">dataGridColumn</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.AddColumnAt(System.Int32,GHI.Glide.UI.DataGridColumn)">
+            <summary>
+            Adds a column at a specified index.
+            </summary>
+            <param name="index">index</param>
+            <param name="dataGridColumn">dataGridColumn</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.RemoveColumn(GHI.Glide.UI.DataGridColumn)">
+            <summary>
+            Removes a column.
+            </summary>
+            <param name="dataGridColumn">dataGridColumn</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.RemoveColumnAt(System.Int32)">
+            <summary>
+            Removes a column at a specified index.
+            </summary>
+            <param name="index">index</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.AddItem(GHI.Glide.UI.DataGridItem)">
+            <summary>
+            Adds an item.
+            </summary>
+            <param name="dataGridItem">dataGridItem</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.AddItemAt(System.Int32,GHI.Glide.UI.DataGridItem)">
+            <summary>
+            Adds an item at a specified index.
+            </summary>
+            <param name="index">index</param>
+            <param name="dataGridItem">dataGridItem</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.RemoveItem(GHI.Glide.UI.DataGridItem)">
+            <summary>
+            Removes an item.
+            </summary>
+            <param name="dataGridItem">dataGridItem</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.RemoveItemAt(System.Int32)">
+            <summary>
+            Removes an item a specified index.
+            </summary>
+            <param name="index">index</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.ScrollUp(System.Int32)">
+            <summary>
+            Scroll the rows up by a specified amount.
+            </summary>
+            <param name="amount">amount</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.ScrollDown(System.Int32)">
+            <summary>
+            Scroll the rows down by a specified amount.
+            </summary>
+            <param name="amount">amount</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.ScrollTo(System.Int32)">
+            <summary>
+            Scroll the rows to a specified index.
+            </summary>
+            <param name="index">index</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.SetRowData(System.Int32,System.Object[])">
+            <summary>
+            Sets new row data.
+            </summary>
+            <param name="index">index</param>
+            <param name="data">Data object array.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.GetRowData(System.Int32)">
+            <summary>
+            Gets row data.
+            </summary>
+            <param name="index">index</param>
+            <returns>Data object array.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.SetCellData(System.Int32,System.Int32,System.Object)">
+            <summary>
+            Sets a cell's data.
+            </summary>
+            <param name="columnIndex">columnIndex</param>
+            <param name="rowIndex">rowIndex</param>
+            <param name="data">data</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.GetCellData(System.Int32,System.Int32)">
+            <summary>
+            Get a cell's data.
+            </summary>
+            <param name="columnIndex">columnIndex</param>
+            <param name="rowIndex">rowIndex</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.Sort(System.Int32)">
+            <summary>
+            Sorts the items on a specified column index.
+            </summary>
+            <param name="columnIndex"></param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGrid.Clear">
+            <summary>
+            Clears all items including their data and resets the data grid.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.Font">
+            <summary>
+            Font used by the text.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.RowHeight">
+            <summary>
+            Row height.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.TappableCells">
+            <summary>
+            Indicates whether items trigger cell tap events or not.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.Draggable">
+            <summary>
+            Indicates whether or not the item list can be dragged up and down.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.SortableHeaders">
+            <summary>
+            Indicates whether the headers are sortable.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.HeadersBackColor">
+            <summary>
+            Headers background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.HeadersFontColor">
+            <summary>
+            Headers font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ItemsBackColor">
+            <summary>
+            Items background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ItemsAltBackColor">
+            <summary>
+            Items alternate background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ItemsFontColor">
+            <summary>
+            Items font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.SelectedItemBackColor">
+            <summary>
+            Selected item background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.SelectedItemFontColor">
+            <summary>
+            Selected item font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.GridColor">
+            <summary>
+            Grid color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ShowScrollbar">
+            <summary>
+            Indicates whether the scrollbar is shown.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ScrollbarWidth">
+            <summary>
+            Scrollbar width.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ScrollbarBackColor">
+            <summary>
+            Scrollbar background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.ScrollbarScrubberColor">
+            <summary>
+            Scrollbar scrubber color.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.DataGrid.TapCellEvent">
+            <summary>
+            Tap grid event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.DataGrid.RowCount">
+            <summary>
+            Number of rows displayed.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.DataGrid.SelectedIndex">
+            <summary>
+            The currently selected index.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.DataGrid.NumItems">
+            <summary>
+            Number of items in the DataGrid.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.DataGrid.ShowHeaders">
+            <summary>
+            Indicates whether the headers are shown.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.DataGrid.Order">
+            <summary>
+            The order in which rows are sorted.
+            </summary>
+            <remarks>ASC stands for ascending ex: 1 to 10 or A to Z. DESC stands for descending ex: 10 to 1 or Z to A.</remarks>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.Order.ASC">
+            <summary>
+            Ascending
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGrid.Order.DESC">
+            <summary>
+            Descending
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Display.CalibrationWindow">
+            <summary>
+            The CalibrationWindow allows you to easily calibrate your touchscreen.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Display.Window">
+            <summary>
+            The Window class inherits from: DisplayObjectContainer, DisplayObject
+            </summary>
+            <remarks>The Window represents a single screen within an application.</remarks>
+        </member>
+        <member name="T:GHI.Glide.Display.DisplayObjectContainer">
+            <summary>
+            The DisplayObjectContainer class is the base class for all objects that can serve as display object containers on the display list.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.Render">
+            <summary>
+            Renders all children onto this container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Passes touch down events to the children.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+            <remarks>Events are passed to the children in descending order (from the last child added to the first).</remarks>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Passes touch up events to the children.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+            <remarks>Events are passed to the children in descending order (from the last child added to the first).</remarks>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.OnTouchMove(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Passes touch move events to the children.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+            <remarks>Events are passed to the children in descending order (from the last child added to the first).</remarks>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.OnTouchGesture(GHI.Glide.TouchGestureEventArgs)">
+            <summary>
+            Passes touch gesture events to the children.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+            <remarks>Events are passed to the children in descending order (from the last child added to the first).</remarks>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.Dispose">
+            <summary>
+            Disposes this container and all it's children.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.Contains(GHI.Glide.Display.DisplayObject)">
+            <summary>
+            Returns whether this container contains a child DisplayObject.
+            </summary>
+            <param name="child">DisplayObject to find.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.AddChild(GHI.Glide.Display.DisplayObject)">
+            <summary>
+            Adds a child DisplayObject to this DisplayObjectContainer.
+            </summary>
+            <param name="child">DisplayObject to add.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.AddChildAt(System.Int32,GHI.Glide.Display.DisplayObject)">
+            <summary>
+            Adds a child DisplayObject to this DisplayObjectContainer at a specific index.
+            </summary>
+            <param name="index"></param>
+            <param name="child"></param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.RemoveChild(GHI.Glide.Display.DisplayObject)">
+            <summary>
+            Removes the specified child DisplayObject from this DisplayObjectContainer.
+            </summary>
+            <param name="child">DisplayObject to remove.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.RemoveChildAt(System.Int32)">
+            <summary>
+            Removes the specified child DisplayObject from this DisplayObjectContainer at a specific index.
+            </summary>
+            <param name="index">Index of a DisplayObject.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.DisplayObjectContainer.GetChildByName(System.String)">
+            <summary>
+            Returns a DisplayObject with the specified name.
+            </summary>
+            <param name="name">Name</param>
+            <returns></returns>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObjectContainer.Item(System.Int32)">
+            <summary>
+            Returns a child DisplayObject by index.
+            </summary>
+            <param name="index">Index of a DisplayObject.</param>
+            <returns></returns>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObjectContainer.Graphics">
+            <summary>
+            Graphics specifies an object that belongs to this container where drawing commands can occur.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObjectContainer.NumChildren">
+            <summary>
+            Returns the number of children of this object.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.DisplayObjectContainer.AutoHeight">
+            <summary>
+            Indicates whether or not the container should automatically resize it's height.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.#ctor">
+            <summary>
+            Creates a new Window.
+            </summary>
+            <remarks>If you're using this empty constructor (to extend for example), you'll need to initialize the window's graphics object yourself. <code>myWindow.Graphics = new Graphics(width, height);</code></remarks>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TriggerOnRenderedEvent(System.Object)">
+            <summary>
+            Triggers a rendered event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Window.
+            </summary>
+            <param name="name">Name of the Window.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TriggerCloseEvent(System.Object)">
+            <summary>
+            Triggers a close event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.HandleEvents">
+            <summary>
+            Tells this window to handle touch events.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.IgnoreEvents">
+            <summary>
+            Tells this window to ignore touch events.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.Render">
+            <summary>
+            Draws this window and it's children on it's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.Invalidate">
+            <summary>
+            Renders the window and flushes it to the screen.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.Dispose">
+            <summary>
+            Disposes this container and all it's children.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TouchDownEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Pass touch down events to the children.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TouchUpEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Pass touch up events to the children.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TouchMoveEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Pass touch move events to the children.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.TouchGestureEvent(System.Object,GHI.Glide.TouchGestureEventArgs)">
+            <summary>
+            Pass touch gesture events to the children.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GHI.Glide.Display.Window.FillRect(GHI.Glide.Geom.Rectangle)">
+            <summary>
+            Fills a rectangle on this window's graphics using it's background image (if it exists) or the background color.
+            </summary>
+            <param name="rect">Rectangle object.</param>
+        </member>
+        <member name="E:GHI.Glide.Display.Window.RenderedEvent">
+            <summary>
+            Value changed event.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.Display.Window.CloseEvent">
+            <summary>
+            Close event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.Window.BackColor">
+            <summary>
+            Background color.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.Window.BackImage">
+            <summary>
+            Background image.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Display.Window.ListY">
+            <summary>
+            List Y-axis position.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.CalibrationWindow.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Creates a new CalibrationWindow.
+            </summary>
+            <param name="autoStart">Whether or not to automatically begin calibration.</param>
+            <param name="autoSave">Whether or not to save the calibration settings using Extended Weak Reference.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.CalibrationWindow.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="P:GHI.Glide.Display.CalibrationWindow.Settings">
+            <summary>
+            Calibration settings.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.OnTap">
+            <summary>
+            Tap event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnTapOption">
+            <summary>
+            Tap option event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Tap option event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.OnTapCell">
+            <summary>
+            Tap cell event handler.
+            </summary>
+            <param name="sender">Object associated with this event.</param>
+            <param name="args">Tap cell event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.OnTapKey">
+            <summary>
+            Tap key event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Tap key event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.OnValueChanged">
+            <summary>
+            Value changed event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnClose">
+            <summary>
+            Close event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnPress">
+            <summary>
+            Press event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnRelease">
+            <summary>
+            Release event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnRendered">
+            <summary>
+            Rendered event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="T:GHI.Glide.OnGesture">
+            <summary>
+            Gesture event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Touch gesture event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.TapOptionEventArgs">
+            <summary>
+            Tap option event arguments.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapOptionEventArgs.Index">
+            <summary>
+            Index
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapOptionEventArgs.Label">
+            <summary>
+            Label
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapOptionEventArgs.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.TapOptionEventArgs.#ctor(System.Int32,System.String,System.Object)">
+            <summary>
+            Creates a new TapOptionEventArgs.
+            </summary>
+            <param name="index">Option index.</param>
+            <param name="label">Option label.</param>
+            <param name="value">Option value.</param>
+        </member>
+        <member name="T:GHI.Glide.TapCellEventArgs">
+            <summary>
+            Tap cell event arguments.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapCellEventArgs.ColumnIndex">
+            <summary>
+            Column index.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapCellEventArgs.RowIndex">
+            <summary>
+            Row index.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.TapCellEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new TapCellEventArgs.
+            </summary>
+            <param name="columnIndex">X coordinate</param>
+            <param name="rowIndex">Y coordinate</param>
+        </member>
+        <member name="M:GHI.Glide.TapCellEventArgs.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns>Tap cell event properties.</returns>
+        </member>
+        <member name="T:GHI.Glide.TapKeyEventArgs">
+            <summary>
+            Tap key event arguments.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapKeyEventArgs.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TapKeyEventArgs.Index">
+            <summary>
+            Index
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.TapKeyEventArgs.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new KeyUpEventArgs.
+            </summary>
+            <param name="value">Character the key represents.</param>
+            <param name="index">Key index within current view.</param>
+        </member>
+        <member name="T:GHI.Glide.Geom.Size">
+            <summary>
+             The Size struct indicates the width and height of an object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Geom.Size.ToString">
+            <summary>
+            Formats the size as a string for debugging.
+            </summary>
+            <returns>The size as a string. E.g. [100 x 100]</returns>
+        </member>
+        <member name="P:GHI.Glide.Geom.Size.Width">
+            <summary>
+            The width of an object, in pixels.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Geom.Size.Height">
+            <summary>
+            The height of an object, in pixels.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Steps">
+            <summary>
+            Holds the steps for different animations.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Steps.SlideWindow">
+            <summary>
+            Steps to slide between windows.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Tween">
+            <summary>
+            The Tween class gives you access to methods that move, resize, and fade objects over a number of steps.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Tween.NumSteps">
+            <summary>
+            Indicates the number of steps an animation needs to tween from start to finish.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Tween.#cctor">
+            <summary>
+            Initializes the Tween class.
+            </summary>
+            <remarks>Sets the best number of steps to tween from start to finish based on your GHI Electronics board model.</remarks>
+        </member>
+        <member name="M:GHI.Glide.Tween.GetSteps(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Calculates a position for each step.
+            </summary>
+            <param name="start">Start position.</param>
+            <param name="end">End position.</param>
+            <param name="steps">Number of steps.</param>
+            <returns>An array of steps to move from start to end.</returns>
+        </member>
+        <member name="M:GHI.Glide.Tween.SlideWindow(GHI.Glide.Display.Window,GHI.Glide.Display.Window,GHI.Glide.Direction)">
+            <summary>
+            Slides between windows in a specified direction.
+            </summary>
+            <param name="fromWindow">From window.</param>
+            <param name="toWindow">To window.</param>
+            <param name="direction">Direction of movement.</param>
+        </member>
+        <member name="T:GHI.Glide.RadioButtonManager">
+            <summary>
+            The RadioButtonManager manages groups of RadioButtons.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.RadioButtonManager.GetValue(System.String)">
+            <summary>
+            Value of the selected radio button within a group.
+            </summary>
+            <param name="groupName">Name of the group.</param>
+            <returns>Current value selected within the group.</returns>
+        </member>
+        <member name="M:GHI.Glide.RadioButtonManager.GetCount(System.String)">
+            <summary>
+            Get the number of buttons in a group.
+            </summary>
+            <param name="groupName">Name of the group.</param>
+            <returns>Number of buttons in the group.</returns>
+        </member>
+        <member name="M:GHI.Glide.RadioButtonManager.OnTapEvent(System.Object)">
+            <summary>
+            Turns off the previously selected radio button.
+            </summary>
+            <param name="sender">Associated object with the sender.</param>
+        </member>
+        <member name="T:GHI.Glide.UI.Canvas">
+            <summary>
+            The Canvas component provides methods to draw.
+            </summary>
+            <remarks>
+            Everytime you call a draw method on this component it's added to a queue.
+            When this component is asked to render by it's parent the queue will be drawn onto it's parent container's graphics.
+            This makes it a good choice for drawing organizing shapes such as fieldsets and separator lines.
+            </remarks>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.Render">
+            <summary>
+            Renders all drawing requests onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.DrawEllipse(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds a draw ellipse request.
+            </summary>
+            <param name="color">Color</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="xRadius">X Radius</param>
+            <param name="yRadius">Y Radius</param>
+            <returns>Index of request.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.DrawImage(System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Adds a draw image request.
+            </summary>
+            <param name="xDst">X</param>
+            <param name="yDst">Y</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="xSrc">Bitmap X offset.</param>
+            <param name="ySrc">Bitmap Y offset.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="opacity">Opacity</param>
+            <returns>Index of request.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.DrawLine(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds a draw line request.
+            </summary>
+            <param name="color">Color</param>
+            <param name="thickness">Thickness</param>
+            <param name="x0">Start X</param>
+            <param name="y0">Start Y</param>
+            <param name="x1">End X</param>
+            <param name="y1">End Y</param>
+            <returns>Index of request.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.DrawRectangle(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Adds a draw rectangle request.
+            </summary>
+            <param name="colorOutline">Color outline.</param>
+            <param name="thicknessOutline">Thickness outline.</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="xCornerRadius">X corder radius.</param>
+            <param name="yCornerRadius">Y corder radius.</param>
+            <param name="colorGradientStart">Color gradient start.</param>
+            <param name="xGradientStart">X gradient start.</param>
+            <param name="yGradientStart">Y gradient start.</param>
+            <param name="colorGradientEnd">Color gradient end.</param>
+            <param name="xGradientEnd">X gradient end.</param>
+            <param name="yGradientEnd">Y gradient end.</param>
+            <param name="opacity">Opacity</param>
+            <returns>Index of request.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.DrawFieldset(GHI.Glide.UI.TextBlock,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32)">
+            <summary>
+            Draws a fieldset around a Label component.
+            </summary>
+            <param name="textBlock">TextBlock component.</param>
+            <param name="leftMargin">Left margin from label.</param>
+            <param name="rightMargin">Right margin from label.</param>
+            <param name="height">Height</param>
+            <param name="borderColor">Border color.</param>
+            <param name="borderThickness">Border thickness.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.Clear">
+            <summary>
+            Clears all drawing requests.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Canvas.ClearAt(System.Int32)">
+            <summary>
+            Clear a drawing request at a specified index.
+            </summary>
+            <param name="index">Index to be cleared.</param>
+        </member>
+        <member name="T:GHI.Glide.UI.CheckBox">
+            <summary>
+            The CheckBox component contains a small box that can be check marked.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.CheckBox.#ctor(System.String,System.UInt16,System.Int32,System.Int32)">
+            <summary>
+            Creates a new CheckBox.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.CheckBox.Render">
+            <summary>
+            Renders the CheckBox onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.CheckBox.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.CheckBox.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.CheckBox.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.CheckBox.Checked">
+            <summary>
+            Indicates whether or not this checkbox is checked.
+            </summary>
+            <remarks>Changing this property will trigger an Invalidate.</remarks>
+        </member>
+        <member name="T:GHI.Glide.UI.Modal">
+            <summary>
+            The Modal component displays a box of text to instruct and inform the user.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Modal.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Modal.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Modal.Render">
+            <summary>
+            Renders the Modal onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Modal.BackImage">
+            <summary>
+            Background image.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Modal.TitlebarHeight">
+            <summary>
+            Titlebar height.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Modal.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Modal.TitleFont">
+            <summary>
+            Title font.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Modal.TitleFontColor">
+            <summary>
+            Title font color.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Dropdown">
+            <summary>
+            THe Dropdown component contains a list of options in which a user can select one.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Dropdown.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.TriggerValueChangedEvent(System.Object)">
+            <summary>
+            Triggers a value changed event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.Render">
+            <summary>
+            Renders the Dropdown onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Dropdown.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.Dropdown.ValueChangedEvent">
+            <summary>
+            Value changed event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Dropdown.Options">
+            <summary>
+            An array of objects that represent the options.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Dropdown.Value">
+            <summary>
+            Value of the selected option.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Dropdown.Text">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Dropdown.Font">
+            <summary>
+            Font used by the text.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Dropdown.FontColor">
+            <summary>
+            Font color.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.DataGridColumn">
+            <summary>
+            The DataGridColumn class describes a column in a DataGrid component.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGridColumn.Label">
+            <summary>
+            The column name to be displayed.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGridColumn.Width">
+            <summary>
+            The width of the column, in pixels.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGridColumn.Order">
+            <summary>
+            Indicates the default order of this column.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridColumn.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new DataGridColumn instance.
+            </summary>
+            <param name="label"></param>
+            <param name="width"></param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridColumn.ToggleOrder">
+            <summary>
+            Toggles the ordering of this column.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.DataGridItem">
+            <summary>
+            The DataGridItem class describes an item in a DataGrid component.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGridItem.Data">
+            <summary>
+            Contains the data for each column within this row.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.DataGridItem.DataType">
+            <summary>
+            Contains the data type for each column within this row.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridItem.#ctor(System.Object[])">
+            <summary>
+            Creates a new DataGridItem.
+            </summary>
+            <param name="data">Object containing data for each column.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridItem.CompareTo(System.Object)">
+            <summary>
+            This is used to be compliant with IComparable.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridItem.CompareTo(GHI.Glide.UI.DataGridItem,System.Int32)">
+            <summary>
+            Compares this item's column to another DataGridItem's column.
+            </summary>
+            <param name="row">DataGridItem object.</param>
+            <param name="columnIndex">Column index.</param>
+            <returns>Number indicating how it should be positioned.</returns>
+        </member>
+        <member name="T:GHI.Glide.UI.DataGridItemComparer">
+            <summary>
+            The DataGridItemComparer class allows comparison between DataGridItems.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.DataGridItemComparer.Compare(System.Object,System.Object)">
+            <summary>
+            Compare two DataGridRow objects.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GHI.Glide.UI.DataGridItemComparer.ColumnIndex">
+            <summary>
+            Column index to compare.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Display.Graphics">
+            <summary>
+            The Graphics class contains a set of methods you can use to draw on itself.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new Graphics object.
+            </summary>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Clear">
+            <summary>
+            Clears the Graphics object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Dispose">
+            <summary>
+            Disposes of the Graphics object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawEllipse(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws an ellipse.
+            </summary>
+            <param name="colorOutline">Color of the outline.</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="xRadius">X Radius</param>
+            <param name="yRadius">Y Radius</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawEllipse(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Draws an ellipse.
+            </summary>
+            <param name="colorOutline">Color of the outline.</param>
+            <param name="thicknessOutline">Thickness of the outline.</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="xRadius">X Radius</param>
+            <param name="yRadius">Y Radius</param>
+            <param name="colorGradientStart">Starting gradient color.</param>
+            <param name="xGradientStart">Starting gradient X.</param>
+            <param name="yGradientStart">Starting gradient Y.</param>
+            <param name="colorGradientEnd">Ending gradient color.</param>
+            <param name="xGradientEnd">Ending gradient X.</param>
+            <param name="yGradientEnd">Ending gradient Y.</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawImage(System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws an image.
+            </summary>
+            <param name="xDst">Destination X.</param>
+            <param name="yDst">Destination Y.</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="xSrc">Source X.</param>
+            <param name="ySrc">Source Y.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawImage(System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Draws an image.
+            </summary>
+            <param name="xDst">Destination X.</param>
+            <param name="yDst">Destination Y.</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="xSrc">Source X.</param>
+            <param name="ySrc">Source Y.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawLine(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a line.
+            </summary>
+            <param name="color">Color</param>
+            <param name="thickness">Thickness</param>
+            <param name="x0">Starting X.</param>
+            <param name="y0">Starting Y.</param>
+            <param name="x1">Ending X.</param>
+            <param name="y1">Ending Y.</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawRectangle(Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Draws a rectangle.
+            </summary>
+            <param name="colorOutline">Color of the outline.</param>
+            <param name="thicknessOutline">Thickness of the outline.</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="xCornerRadius">X corner radius.</param>
+            <param name="yCornerRadius">Y corner radius.</param>
+            <param name="colorGradientStart">Starting gradient color.</param>
+            <param name="xGradientStart">Starting gradient X.</param>
+            <param name="yGradientStart">Starting gradient Y.</param>
+            <param name="colorGradientEnd">Ending gradient color.</param>
+            <param name="xGradientEnd">Ending gradient X.</param>
+            <param name="yGradientEnd">Ending gradient Y.</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawRectangle(GHI.Glide.Geom.Rectangle,Microsoft.SPOT.Presentation.Media.Color,System.UInt16)">
+            <summary>
+            Draws a rectangle.
+            </summary>
+            <param name="rect">Rectangle</param>
+            <param name="color">Color</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawText(System.String,Microsoft.SPOT.Font,Microsoft.SPOT.Presentation.Media.Color,System.Int32,System.Int32)">
+            <summary>
+            Draws text.
+            </summary>
+            <param name="text">Text</param>
+            <param name="font">Font</param>
+            <param name="color">Color</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawTextInRect(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32,Microsoft.SPOT.Presentation.Media.Color,Microsoft.SPOT.Font)">
+            <summary>
+            Draws text in a rectangle.
+            </summary>
+            <param name="text">Text</param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="dtFlags">Flags found in Bitmap.</param>
+            <param name="color">Color</param>
+            <param name="font">Font</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawTextInRect(System.String@,System.Int32@,System.Int32@,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32,Microsoft.SPOT.Presentation.Media.Color,Microsoft.SPOT.Font)">
+            <summary>
+            Draws text in a rectangle.
+            </summary>
+            <param name="text">Text</param>
+            <param name="xRelStart"></param>
+            <param name="yRelStart"></param>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="dtFlags">Flags found in Bitmap.</param>
+            <param name="color">Color</param>
+            <param name="font">Font</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.DrawTextInRect(System.String,GHI.Glide.Geom.Rectangle,System.UInt32,Microsoft.SPOT.Presentation.Media.Color,Microsoft.SPOT.Font)">
+            <summary>
+            Draws text in a rectangle.
+            </summary>
+            <param name="text">Text</param>
+            <param name="rect">Rectangle</param>
+            <param name="dtFlags">Flags found in Bitmap.</param>
+            <param name="color">Color</param>
+            <param name="font">Font</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Flush">
+            <summary>
+            Flushes the Graphics object to the screen.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Flush(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Flushes the Graphics object to the screen.
+            </summary>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.GetBitmap">
+            <summary>
+            Bitmap used by the Graphics object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Scale9Image(System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Resizes images without distortion.
+            </summary>
+            <param name="xDst">Destination X.</param>
+            <param name="yDst">Destination Y.</param>
+            <param name="widthDst">Width</param>
+            <param name="heightDst">Height</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="leftBorder">Left border.</param>
+            <param name="topBorder">Top border.</param>
+            <param name="rightBorder">Right border.</param>
+            <param name="bottomBorder">Bottom border.</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.Scale9Image(System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.UInt16)">
+            <summary>
+            Resizes images without distortion.
+            </summary>
+            <param name="xDst">Destination X.</param>
+            <param name="yDst">Destination Y.</param>
+            <param name="widthDst">Width</param>
+            <param name="heightDst">Height</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="border">Border</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.SetClippingRectangle(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the clipping rectangle.
+            </summary>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Display.Graphics.StretchImage(System.Int32,System.Int32,Microsoft.SPOT.Bitmap,System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Stretch an image.
+            </summary>
+            <param name="xDst">Destination X.</param>
+            <param name="yDst">Destination Y.</param>
+            <param name="bitmap">Bitmap</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="opacity">Opacity</param>
+        </member>
+        <member name="T:GHI.Glide.UI.Image">
+            <summary>
+            The Image component allows displaying images.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Image.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.Render">
+            <summary>
+            Renders the Image onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Image.FillRect(GHI.Glide.Geom.Rectangle)">
+            <summary>
+            Fills a rectangle on this image's parent container's graphics using it's Bitmap.
+            </summary>
+            <param name="rect"></param>
+        </member>
+        <member name="P:GHI.Glide.UI.Image.Bitmap">
+            <summary>
+            Bitmap
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Image.Stretch">
+            <summary>
+            Indicates whether or not the image should be stretched if the control is larger than the bitmap.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.MessageBox">
+            <summary>
+            The MessageBox component displays a box of text to instruct and inform the user.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.MessageBox.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new MessageBox.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.MessageBox.Render">
+            <summary>
+            Renders the MessageBox onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.MessageBox.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.MessageBox.MessageFont">
+            <summary>
+            Message font.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.MessageBox.MessageFontColor">
+            <summary>
+            Message font color.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Slider">
+            <summary>
+            The Slider component lets users select a value by sliding a knob along a track.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Slider component.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.TriggerValueChangedEvent(System.Object)">
+            <summary>
+            Triggers a value changed event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.Render">
+            <summary>
+            Renders the Button onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Slider.OnTouchMove(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch move event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="F:GHI.Glide.UI.Slider.TickColor">
+            <summary>
+            Tick color.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.Slider.ValueChangedEvent">
+            <summary>
+            Value changed event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.Direction">
+            <summary>
+            Direction of the slider; horizontal or vertical.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.KnobSize">
+            <summary>
+            Size of the knob.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.Maximum">
+            <summary>
+            Maximum value.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.Minimum">
+            <summary>
+            Minimum value.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.SnapInterval">
+            <summary>
+            Increment by which the value is increased or decreased as the user slides the knob.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.TickInterval">
+            <summary>
+            Tick mark spacing relative to the maximum value.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Slider.Value">
+            <summary>
+            Gets or sets the current value.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.SliderDirection">
+            <summary>
+            The orientation of the Slider component.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.SliderDirection.Horizontal">
+            <summary>
+            Horizontal
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.SliderDirection.Vertical">
+            <summary>
+            Vertical
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.InputBox">
+            <summary>
+            The InputBox is the base class for TextBox and PasswordBox.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.InputBox.TriggerValueChangedEvent(System.Object)">
+            <summary>
+            Triggers a value changed event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.InputBox.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.InputBox.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="E:GHI.Glide.UI.InputBox.ValueChangedEvent">
+            <summary>
+            Value changed event.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.InputBox.Text">
+            <summary>
+            A string containing the text.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.InputBox.TextAlign">
+            <summary>
+            Indicates the text alignment.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.InputBox.Font">
+            <summary>
+            Font used by the text.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.InputBox.FontColor">
+            <summary>
+            Indicates the font color.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.KeyboardText">
+            <summary>
+            The KeyboardText component displays multiline wrapping text.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.KeyboardText.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new KeyboardText.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.KeyboardText.Render">
+            <summary>
+            Renders the KeyboardText on it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.KeyboardText.Text">
+            <summary>
+            A string of text.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.KeyboardText.IsPassword">
+            <summary>
+            Indicates whether or not this is a password.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Button">
+            <summary>
+            The Button component represents a rectangular button.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Button component.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.TriggerPressEvent(System.Object)">
+            <summary>
+            Triggers a press event.
+            </summary>
+            <param name="sender">Object associated with this event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.TriggerReleaseEvent(System.Object)">
+            <summary>
+            Triggers a release event.
+            </summary>
+            <param name="sender">Object associated with this event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.Render">
+            <summary>
+            Renders the Button onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Button.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.ButtonUp">
+            <summary>
+            Bitmap that represents the up state.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.ButtonDown">
+            <summary>
+            Bitmap that represents the down state.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.Text">
+            <summary>
+            Text on the button.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.Font">
+            <summary>
+            Font used by the text.
+            </summary>
+            <remarks>This can be a font from Resources or one within Glide retrieved via the FontManager class.</remarks>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.FontColor">
+            <summary>
+            Font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.DisabledFontColor">
+            <summary>
+            Disabled font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.TintColor">
+            <summary>
+            Color to tint the button.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Button.TintAmount">
+            <summary>
+            Amount of tint to apply.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.Button.PressEvent">
+            <summary>
+            Press event.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.Button.ReleaseEvent">
+            <summary>
+            Release event.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.FontManager">
+            <summary>
+            Manages font-related functionality.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.FontManager.GetFont(GHI.Glide.FontManager.FontType)">
+            <summary>
+            Returns a font resource specified by a font type.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.FontManager.GetRect(Microsoft.SPOT.Font,System.String)">
+            <summary>
+            Returns a Rectangle object the same size of a string.
+            </summary>
+            <param name="font"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.FontManager.GetSize(Microsoft.SPOT.Font,System.String)">
+            <summary>
+            Returns the size of a string.
+            </summary>
+            <param name="font"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GHI.Glide.FontManager.FontType">
+            <summary>
+            Different types of fonts/sizes.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg08">
+            <summary>
+            Droid Sans Regular 8
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg09">
+            <summary>
+            Droid Sans Regular 9
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg10">
+            <summary>
+            Droid Sans Regular 10
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg11">
+            <summary>
+            Droid Sans Regular 11
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg12">
+            <summary>
+            Droid Sans Regular 12
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg14">
+            <summary>
+            Droid Sans Regular 14
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg18">
+            <summary>
+            Droid Sans Regular 18
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg24">
+            <summary>
+            Droid Sans Regular 24
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg32">
+            <summary>
+            Droid Sans Regular 32
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.FontManager.FontType.droid_reg48">
+            <summary>
+            Droid Sans Regular 48
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.Geom.Point">
+            <summary>
+            The Point object represents a location in a two-dimensional coordinate system.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Point.X">
+            <summary>
+            The horizontal coordinate of the point.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Point.Y">
+            <summary>
+            The vertical coordinate of the point.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Geom.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new Point.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+        </member>
+        <member name="M:GHI.Glide.Geom.Point.ToString">
+            <summary>
+            Formats the point as a string for debugging.
+            </summary>
+            <returns>The point as a string. E.g. [100, 100]</returns>
+        </member>
+        <member name="T:GHI.Glide.Geom.Rectangle">
+            <summary>
+            A Rectangle object is defined by its position, width and height.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Rectangle.X">
+            <summary>
+            The x coordinate of the top-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Rectangle.Y">
+            <summary>
+            The y coordinate of the top-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Rectangle.Width">
+            <summary>
+            The width of the rectangle, in pixels.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Geom.Rectangle.Height">
+            <summary>
+            The height of the rectangle, in pixels.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Rectangle.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Clone">
+            <summary>
+            Clones this rectangle.
+            </summary>
+            <returns>Rectangle object.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Contains(System.Int32,System.Int32)">
+            <summary>
+            Determines whether the specified point is contained within the rectangular region.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <returns>True if the X-axis and Y-axis are within this rectangle, otherwise false.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Contains(GHI.Glide.Geom.Point)">
+            <summary>
+            Determines whether the specified point is contained within the rectangular region
+            </summary>
+            <param name="point">Position of the touch.</param>
+            <returns>True if the point is within this rectangle, otherwise false.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Contains(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Determines whether the object speficied by the parameters is contained within this Rectangle object.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <returns>True if the area within this rectangle, otherwise false.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Contains(GHI.Glide.Geom.Rectangle)">
+            <summary>
+            Determines whether the Rectangle object parameter is contained within this Rectangle object.
+            </summary>
+            <param name="rect">Rectangle</param>
+            <returns>True if the rectangle is within this rectangle, otherwise false.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Intersects(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Determines whether the object speficied by the parameters intersects with this Rectangle object.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">X-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.Intersects(GHI.Glide.Geom.Rectangle)">
+            <summary>
+            Determines whether the Rectangle object parameter intersects with this Rectangle object.
+            </summary>
+            <param name="rect">Rectangle object.</param>
+            <returns>True if the rectangle intersects with this rectangle, otherwise false.</returns>
+        </member>
+        <member name="M:GHI.Glide.Geom.Rectangle.ToString">
+            <summary>
+            Formats the rectangle as a string for debugging.
+            </summary>
+            <returns>The Rectangle as a string. E.g. [0, 0, 100, 100]</returns>
+        </member>
+        <member name="T:GHI.Glide.TouchEventArgs">
+            <summary>
+            Touch event arguments.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchEventArgs.Propagate">
+            <summary>
+            Indicates whether or not to continue processing the event.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchEventArgs.Point">
+            <summary>
+            The point of contact.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.TouchEventArgs.#ctor(Microsoft.SPOT.Touch.TouchInput[])">
+            <summary>
+            Creates a new TouchEventArgs.
+            </summary>
+            <param name="Touches">TouchInput</param>
+        </member>
+        <member name="M:GHI.Glide.TouchEventArgs.#ctor(GHI.Glide.Geom.Point)">
+            <summary>
+            Creates a new TouchEventArgs.
+            </summary>
+            <param name="point">Point</param>
+        </member>
+        <member name="M:GHI.Glide.TouchEventArgs.StopPropagation">
+            <summary>
+            Stops propagation.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.TouchGesture">
+            <summary>
+            The TouchGesture class defines gestures.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.NoGesture">
+            <summary>
+            No Gesture
+            </summary>
+            <remarks>Can be used to represent an error gesture or unknown gesture.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Begin">
+            <summary>
+            Begin
+            </summary>
+            <remarks>Used to identify the beginning of a Gesture Sequence; App can use this to highlight UIElement or some other sort of notification.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.End">
+            <summary>
+            End
+            </summary>
+            <remarks>Used to identify the end of a gesture sequence; Fired when last finger involved in a gesture is removed.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Right">
+            <summary>
+            Right
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.UpRight">
+            <summary>
+            Up Right
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Up">
+            <summary>
+            Up
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.UpLeft">
+            <summary>
+             Up Left
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Left">
+            <summary>
+            Left
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.DownLeft">
+            <summary>
+            Down Left
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Down">
+            <summary>
+            Down
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.DownRight">
+            <summary>
+            Down Right
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Tap">
+            <summary>
+            Tap
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.DoubleTap">
+            <summary>
+            Double Tap
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Zoom">
+            <summary>
+            Zoom
+            </summary>
+            <remarks>Equivalent to your "Pinch" gesture.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Pan">
+            <summary>
+            Pan
+            </summary>
+            <remarks>Equivalent to your "Scroll" gesture.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Rotate">
+            <summary>
+            Rotate
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.TwoFingerTap">
+            <summary>
+            Two finger tap.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.Rollover">
+            <summary>
+            Rollover
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGesture.UserDefined">
+            <summary>
+            Undefined
+            </summary>
+            <remarks>Additional touch gestures.</remarks>
+        </member>
+        <member name="T:GHI.Glide.TouchGestureEventArgs">
+            <summary>
+            Touch gesture event arguments.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.Propagate">
+            <summary>
+            Indicates whether or not to continue processing the event.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.Timestamp">
+            <summary>
+            Time the event occured.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.X">
+            <summary>
+            X coordinate.
+            </summary>
+            <remarks>The X forms the center location of the gesture for multi-touch or the starting location for single touch.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.Y">
+            <summary>
+            Y coordinate.
+            </summary>
+            <remarks>The Y forms the center location of the gesture for multi-touch or the starting location for single touch.</remarks>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.Gesture">
+            <summary>
+            Indicates the gesture.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.TouchGestureEventArgs.Arguments">
+            <summary>
+            Touch gesture arguments.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.TouchGestureEventArgs.#ctor(GHI.Glide.TouchGesture,System.Int32,System.Int32,System.UInt16,System.DateTime)">
+            <summary>
+            Creates a new TouchGestureEventArgs.
+            </summary>
+            <param name="gesture">Touch gesture.</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="arguments">Touch gesture arguments.</param>
+            <param name="timestamp">Time the event occured.</param>
+        </member>
+        <member name="M:GHI.Glide.TouchGestureEventArgs.StopPropagation">
+            <summary>
+            Stops propagation.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.TouchEventHandler">
+            <summary>
+            Touch event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.TouchGestureEventHandler">
+            <summary>
+            Touch gesture event handler.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="T:GHI.Glide.GlideTouch">
+            <summary>
+            The GlideTouch class handles all touch functionality.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.GlideTouch.TouchX">
+            <summary>
+            X-axis of the last touch point.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.GlideTouch.TouchY">
+            <summary>
+            Y-axis of the last touch point.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.GlideTouch.IgnoreAllEvents">
+            <summary>
+            Indicates whether all touch events are ignored or not.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideTouch.Initialize">
+            <summary>
+            Initializes the touch panel.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideTouch.RaiseTouchDownEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Raises a touch down event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+            <remarks>
+            Raises a touch down event. This event is handled by the Window currently assigned to Glide.MainWindow.
+            Once this Window receives a touch down event, it's passed on to it's children.
+            The first child to handle the event stops propagation to the remaining children.
+            </remarks>
+        </member>
+        <member name="M:GHI.Glide.GlideTouch.RaiseTouchUpEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Raises a touch up event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+            <remarks>
+            Raises a touch up event. This event is handled by the Window currently assigned to Glide.MainWindow.
+            Once this Window receives a touch up event, it's passed on to it's children.
+            The first child to handle the event stops propagation to the remaining children.
+            </remarks>
+        </member>
+        <member name="M:GHI.Glide.GlideTouch.RaiseTouchMoveEvent(System.Object,GHI.Glide.TouchEventArgs)">
+            <summary>
+            Raises a touch move event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+            <remarks>
+            Raises a touch move event. This event is handled by the Window currently assigned to Glide.MainWindow.
+            Once this Window receives a touch move event, it's passed on to it's children.
+            The first child to handle the event stops propagation to the remaining children.
+            </remarks>
+        </member>
+        <member name="M:GHI.Glide.GlideTouch.RaiseTouchGestureEvent(System.Object,GHI.Glide.TouchGestureEventArgs)">
+            <summary>
+            Raises a touch gesture event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="e">Touch event arguments.</param>
+        </member>
+        <member name="F:GHI.Glide.GlideTouch.CalSettings">
+            <summary>
+            Current calibration settings if set othwerwise null.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.GlideTouch.TouchDownEvent">
+            <summary>
+            Touch down event handler.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.GlideTouch.TouchUpEvent">
+            <summary>
+            Touch up event handler.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.GlideTouch.TouchMoveEvent">
+            <summary>
+            Touch move event handler.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.GlideTouch.TouchGestureEvent">
+            <summary>
+            Touch gesture event handler.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.GlideTouch.Calibrated">
+            <summary>
+            Indicates whether or not the panel has been calibrated.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.CalibrationSettings">
+            <summary>
+            Calibration Settings
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.CalibrationSettings.Points">
+            <summary>
+            Calibration Points
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.CalibrationSettings.SX">
+            <summary>
+            Screen X Buffer
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.CalibrationSettings.SY">
+            <summary>
+            Screen Y Buffer
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.CalibrationSettings.CX">
+            <summary>
+            Uncalibrated X Buffer
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.CalibrationSettings.CY">
+            <summary>
+            Uncalibrated Y Buffer
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.GlideLoader">
+            <summary>
+            The GlideLoader class parses XML into components.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadWindow(System.String)">
+            <summary>
+            Loads a Window from an XML string.
+            </summary>
+            <param name="xmlStr">XML string.</param>
+            <returns>Window object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadWindow(System.Byte[])">
+            <summary>
+            Loads a Window from XML bytes.
+            </summary>
+            <param name="xmlBytes">XML bytes.</param>
+            <returns>Window object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.GetComponent(System.Xml.XmlReader)">
+            <summary>
+            Parses a UI component from the XML.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>DisplayObject</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.ParseWindow(System.Xml.XmlReader)">
+            <summary>
+            Parses the Window XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Window</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadButton(System.Xml.XmlReader)">
+            <summary>
+            Parses the Button XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Button object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadCheckBox(System.Xml.XmlReader)">
+            <summary>
+            Parses the CheckBox XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>CheckBox object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadDropdown(System.Xml.XmlReader)">
+            <summary>
+            Parses the Dropdown XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Dropdown object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadDataGrid(System.Xml.XmlReader)">
+            <summary>
+            Parses the DataGrid XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Datagrid object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadImage(System.Xml.XmlReader)">
+            <summary>
+            Parses the Image XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Image object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadPasswordBox(System.Xml.XmlReader)">
+            <summary>
+            Parses the PasswordBox XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>PasswordBox object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadProgressBar(System.Xml.XmlReader)">
+            <summary>
+            Parses the ProgressBar XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>ProgressBar object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadRadioButton(System.Xml.XmlReader)">
+            <summary>
+            Parses the RadioButton XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>RadioButton object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadSlider(System.Xml.XmlReader)">
+            <summary>
+            Parses the Slider XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>Slider object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadTextBlock(System.Xml.XmlReader)">
+            <summary>
+            Parses the TextBlock XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>TextBlock object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideLoader.LoadTextBox(System.Xml.XmlReader)">
+            <summary>
+            Parses the TextBox XML into a UI component.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <returns>TextBox object.</returns>
+        </member>
+        <member name="T:GHI.Glide.Glide">
+            <summary>
+            The Glide class provides core functionality.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Glide.SetScreenSize(System.Int32,System.Int32)">
+            <summary>
+            This method changes the underlying size of the bitmap that is drawn to
+            the screen. Do not call this method if you are using a regular display.
+            It is only useful when you are using a non-native display such as a
+            SPI display like our DisplayN18.
+            </summary>
+            <param name="width">The width of the display.</param>
+            <param name="height">The height of the display.</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.OpenKeyboard(System.Object)">
+            <summary>
+            Opens the keyboard.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.CloseKeyboard">
+            <summary>
+            Closes the keyboard.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Glide.OpenList(System.Object,GHI.Glide.UI.List)">
+            <summary>
+            Opens a List component.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="list">List component that needs to be opened.</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.CloseList">
+            <summary>
+            Closes a List component.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.Glide.Flush(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Flushes specified area to the screen.
+            </summary>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.Flush(GHI.Glide.Display.DisplayObject)">
+            <summary>
+            Flushes the rectangular area the DisplayObject occupies to the screen.
+            </summary>
+            <param name="displayObject">DisplayObject</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.Flush(GHI.Glide.Geom.Rectangle)">
+            <summary>
+            Flushes the rectangular area to the screen.
+            </summary>
+            <param name="rect">Rectangle</param>
+        </member>
+        <member name="M:GHI.Glide.Glide.DefaultKeyboard">
+            <summary>
+            Returns a keyboard used by 320x240 LCDs.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Glide.IsEmulator">
+            <summary>
+            Indicates whether or not we're using the emulator.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.Glide.FitToScreen">
+            <summary>
+            Indicates whether or not to resize windows to the LCD's resolution.
+            </summary>
+            <remarks>This does not affect component placement. They will remain in their assigned position.</remarks>
+        </member>
+        <member name="F:GHI.Glide.Glide.MessageBoxManager">
+            <summary>
+            A message box that helps inform and instruct the user.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Glide.LCD">
+            <summary>
+            Returns the screen resolution.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Glide.Screen">
+            <summary>
+            Returns a reference to the bitmap that represents the current screen.
+            This is only useful for drawing the bitmap to a display that does not
+            support bitmap.flush().
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Glide.Keyboard">
+            <summary>
+            Current Keyboard used by Glide.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.Glide.MainWindow">
+            <summary>
+            The window currently in focus.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.List">
+            <summary>
+            The list component provides a list of options.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.List.#ctor(System.Collections.ArrayList,System.Int32)">
+            <summary>
+            Creates a new List component.
+            </summary>
+            <param name="options">Array of options.</param>
+            <param name="width">Width</param>
+            <remarks>The list cannot be smaller than 100 or greater than the LCD size. We recommend keeping the size to a minimum; only use what you need.</remarks>
+        </member>
+        <member name="M:GHI.Glide.UI.List.TriggerTapOptionEvent(System.Object,GHI.Glide.TapOptionEventArgs)">
+            <summary>
+            Triggers a tap option event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Tap option event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.List.TriggerCloseEvent(System.Object)">
+            <summary>
+            Triggers a close event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.List.Render">
+            <summary>
+            Renders the List onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.List.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.List.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.List.OnTouchMove(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch move event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.List.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.List.TapOptionEvent">
+            <summary>
+            Tap option event.
+            </summary>
+        </member>
+        <member name="E:GHI.Glide.UI.List.CloseEvent">
+            <summary>
+            Close event.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.ListItem">
+            <summary>
+            The ListItem class holds information relevant to a specific option in a list-based component.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.ListItem.#ctor(System.String,System.Object)">
+            <summary>
+            Creates a new ListItem.
+            </summary>
+            <param name="label">Label</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="M:GHI.Glide.UI.ListItem.Render(Microsoft.SPOT.Bitmap)">
+            <summary>
+            Renders the ListItem onto the provided bitmap.
+            </summary>
+            <param name="bitmap">Bitmap this item will be drawn on.</param>
+        </member>
+        <member name="P:GHI.Glide.UI.ListItem.Label">
+            <summary>
+            A string of text that describes this item.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.ListItem.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.PasswordBox">
+            <summary>
+            The PasswordBox component allows text input without revealing the text.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.PasswordBox.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new PasswordBox.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.PasswordBox.Render">
+            <summary>
+            Renders the PasswordBox onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.PasswordBox.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.ProgressBar">
+            <summary>
+            The ProgressBar component displays the progress of content that is being loaded.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.ProgressBar.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new ProgressBar.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.ProgressBar.Render">
+            <summary>
+            Renders the ProgressBar onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.ProgressBar.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.ProgressBar.Direction">
+            <summary>
+            Direction in which the load bar expands.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.ProgressBar.MaxValue">
+            <summary>
+            Maximum value
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.ProgressBar.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.RadioButton">
+            <summary>
+            The RadioButton component lets a user to make a single selection from a set of choices.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new RadioButton.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.Render">
+            <summary>
+            Renders the RadioButton onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.RadioButton.Toggle">
+            <summary>
+            Toggles the radio button between selected and not selected.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.GroupName">
+            <summary>
+            The group this radio button belongs to.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.ShowBackground">
+            <summary>
+            Indicates whether or not to show the background box.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.OutlineColor">
+            <summary>
+            Outline color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.Color">
+            <summary>
+            Color
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.SelectedOutlineColor">
+            <summary>
+            Selected outline color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.RadioButton.SelectedColor">
+            <summary>
+            Selected color.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.RadioButton.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.RadioButton.Checked">
+            <summary>
+            Indicates whether or not this radio button is checked.
+            </summary>
+            <remarks>Changing this property will trigger an Invalidate.</remarks>
+        </member>
+        <member name="T:GHI.Glide.UI.TextBlock">
+            <summary>
+            The TextBlock component is a multiline text field.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBlock.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new TextBlock.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBlock.Render">
+            <summary>
+            Renders the TextBlock onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBlock.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBlock.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.Text">
+            <summary>
+            A string containing the text.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.TextAlign">
+            <summary>
+            Text horizonal alignement within the textfield.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.TextVerticalAlign">
+            <summary>
+            Textfield's vertical alignement within the TextBlock.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.Font">
+            <summary>
+            Font used by the text.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.FontColor">
+            <summary>
+            Indicates the font color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.BackColor">
+            <summary>
+            Background color.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.ShowBackColor">
+            <summary>
+            Indicates whether or not a background color will be shown.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.TextBlock.For">
+            <summary>
+            Indicates a CheckBox or RadioButton this label can toggle.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.TextBox">
+            <summary>
+            The TextBox component is a single-line text input.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBox.#ctor(System.String,System.UInt16,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new TextBox.
+            </summary>
+            <param name="name">Name</param>
+            <param name="alpha">Alpha</param>
+            <param name="x">X-axis position.</param>
+            <param name="y">Y-axis position.</param>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBox.Render">
+            <summary>
+            Renders the TextBox onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.TextBox.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Keyboard">
+            <summary>
+            The Keyboard component is an on-screen keyboard that allows user input.
+            </summary>
+            <remarks>The Keyboard component should be used in conjunction with a TextBox or PasswordBox. Please see those components for further details.</remarks>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new Keyboard.
+            </summary>
+            <param name="width">Width</param>
+            <param name="height">Height</param>
+            <param name="numViews">Number of views.</param>
+            <param name="keyHeight">Key height.</param>
+            <param name="keySpacing">Key spacing.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.TriggerTapKeyEvent(System.Object,GHI.Glide.TapKeyEventArgs)">
+            <summary>
+            Triggers a key up event.
+            </summary>
+            <param name="sender">Object associated with the event.</param>
+            <param name="args">Key up event arguments.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.Render">
+            <summary>
+            Renders the Keyboard onto it's parent container's graphics.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.DrawKeyDown(System.Int32)">
+            <summary>
+            Renders and flushes the specified key within the current view.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.Invalidate">
+            <summary>
+            Renders this display object and flushes it to the screen.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.OnTouchDown(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch down event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.OnTouchUp(GHI.Glide.TouchEventArgs)">
+            <summary>
+            Handles the touch up event.
+            </summary>
+            <param name="e">Touch event arguments.</param>
+            <returns>Touch event arguments.</returns>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.Dispose">
+            <summary>
+            Disposes all disposable objects in this object.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.SetViewKeyContent(GHI.Glide.UI.Keyboard.View,System.String[][])">
+            <summary>
+            Sets a view's key content.
+            </summary>
+            <param name="view">KeyboardView</param>
+            <param name="keyContent">Array containing the key content.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.SetViewKeyWidth(GHI.Glide.UI.Keyboard.View,System.Int32[][])">
+            <summary>
+            Sets a view's key width.
+            </summary>
+            <param name="view">KeyboardView</param>
+            <param name="keyWidth">Array containing the key widths.</param>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.Start">
+            <summary>
+            Starts the keyboard.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.Stop">
+            <summary>
+            Stops the keyboard.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.SetView(GHI.Glide.UI.Keyboard.View)">
+            <summary>
+            Set the keyboard view.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.CalculateKeys">
+            <summary>
+            Calculates the space each key occupies using the X and Y offset.
+            </summary>
+            <remarks>The keys must be centered and spaced exactly the same.</remarks>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.DefaultKeyContent">
+            <summary>
+            Sets the default key content.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.UI.Keyboard.DefaultKeyWidth">
+            <summary>
+            Sets the default key width.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.Restricted">
+            <summary>
+            Restricted characters; the corresponding keys will be disabled.
+            </summary>
+            <example>
+            // Here for example, we restrict invalid file name characters and the Symbols view.
+            <code>Glide.Keyboard.Restricted = new string[9] { "\\", "/", ":", "*", "?", "\"", "&lt;", "&gt;", Keyboard.ActionKey.ToSymbols };</code>
+            </example>
+        </member>
+        <member name="E:GHI.Glide.UI.Keyboard.TapKeyEvent">
+            <summary>
+            A key entered the up state.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Keyboard.CurrentView">
+            <summary>
+            Current view.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Keyboard.BitmapUp">
+            <summary>
+            Bitmaps for each view containing keys in the up position.
+            </summary>
+        </member>
+        <member name="P:GHI.Glide.UI.Keyboard.Uppercase">
+            <summary>
+            Indicates whether or not the letters are uppercase or lowercase.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Keyboard.View">
+            <summary>
+            Keyboard views.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.View.Letters">
+            <summary>
+            Letters
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.View.Numbers">
+            <summary>
+            Numbers
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.View.Symbols">
+            <summary>
+            Symbols
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.UI.Keyboard.ActionKey">
+            <summary>
+            Keys that perform an action.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.ToggleCase">
+            <summary>
+            Toggle between uppercase and lowercase.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.Backspace">
+            <summary>
+            Backspace
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.ToNumbers">
+            <summary>
+            Switches to the Numbers keyboard view.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.ToLetters">
+            <summary>
+            Switches to the Letters keyboard view.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.ToSymbols">
+            <summary>
+            Switches to the Symbols keyboard view.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.Space">
+            <summary>
+            Space
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.Return">
+            <summary>
+            Return
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.UI.Keyboard.ActionKey.Tab">
+            <summary>
+            Tab
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.GlideUtils">
+            <summary>
+            The Utils class contains utility methods that help other classes.
+            </summary>
+        </member>
+        <member name="T:GHI.Glide.GlideUtils.Convert">
+            <summary>
+            The Convert class contains methods to convert objects.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Convert.ToColor(System.String)">
+            <summary>
+            Converts a hex color code into a Color object.
+            </summary>
+            <param name="hexCode">Hex color code.</param>
+            <returns>Color object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Convert.ToFont(System.String)">
+            <summary>
+            Converts a string into a Font object.
+            </summary>
+            <param name="font">A number that represents the font.</param>
+            <returns>Font object.</returns>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Convert.ToAlignment(System.String)">
+            <summary>
+            Converts a string into an alignment flag.
+            </summary>
+            <param name="alignment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Convert.ToHorizontalAlign(System.String)">
+            <summary>
+            Converts a string into a horizontal alignment constant.
+            </summary>
+            <param name="alignment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Convert.ToVerticalAlign(System.String)">
+            <summary>
+            Converts a string into a horizontal alignment constant.
+            </summary>
+            <param name="alignment"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GHI.Glide.GlideUtils.Math">
+            <summary>
+            The Math class contains methods to perform math functions.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Math.MinMax(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Checks a value against minimum and maximum limits.
+            </summary>
+            <param name="value">Value to be checked.</param>
+            <param name="min">Minimum value.</param>
+            <param name="max">Maximum value.</param>
+            <returns>The value limited by min and max.</returns>
+        </member>
+        <member name="T:GHI.Glide.GlideUtils.Debug">
+            <summary>
+            The Debug class contains methods to assist in debugging.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Debug.Print(System.String,System.Object[])">
+            <summary>
+            Prints a labeled string and array data.
+            </summary>
+            <param name="label">label</param>
+            <param name="array">array</param>
+        </member>
+        <member name="T:GHI.Glide.GlideUtils.Timer">
+            <summary>
+            Simple class to assist in timing code execution.
+            </summary>
+        </member>
+        <member name="F:GHI.Glide.GlideUtils.Timer.Ticks">
+            <summary>
+            Ticks
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Timer.Start">
+            <summary>
+            Start timing.
+            </summary>
+        </member>
+        <member name="M:GHI.Glide.GlideUtils.Timer.Stop(System.String)">
+            <summary>
+            Stop timing.
+            </summary>
+            <param name="label">This text will appear before the time when printed.</param>
+        </member>
+    </members>
+</doc>

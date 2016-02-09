@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gadgeteer.Serial</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.SocketInterfaces.SerialFactory">
+            <summary>
+            Provides access to the <see cref="T:Gadgeteer.SocketInterfaces.Serial" /> interfaces on sockets.
+            </summary>
+        </member>
+        <member name="M:Gadgeteer.SocketInterfaces.SerialFactory.Create(Gadgeteer.Socket,System.Int32,Gadgeteer.SocketInterfaces.SerialParity,Gadgeteer.SocketInterfaces.SerialStopBits,System.Int32,Gadgeteer.SocketInterfaces.HardwareFlowControl,Gadgeteer.Modules.Module)">
+            <summary>
+            Creates an instance of <see cref="T:Gadgeteer.SocketInterfaces.Serial" /> for the given socket.
+            </summary>
+            <remarks>This automatically checks that the socket supports Type U, and reserves the pins.
+            An exception will be thrown if there is a problem with these checks.</remarks>
+            <param name="baudRate">The baud rate for the serial port.</param>
+            <param name="parity">A value from the <see cref="T:Gadgeteer.SocketInterfaces.SerialParity"/> enumeration that specifies 
+            the parity for the port.</param>
+            <param name="stopBits">A value from the <see cref="T:Gadgeteer.SocketInterfaces.SerialStopBits"/> enumeration that specifies 
+            the stop bits for the port.</param>
+            <param name="dataBits">The number of data bits.</param>
+            <param name="socket">The socket for this serial interface.</param>
+            <param name="hardwareFlowControlRequirement">Specifies whether the module must use hardware flow control, will use hardware flow control if available, or does not use hardware flow control.</param>
+            <param name="module">The module using this interface (which can be null if unspecified).</param>
+            <returns>An instance of <see cref="T:Gadgeteer.SocketInterfaces.Serial" /> for the given socket.</returns>
+        </member>
+    </members>
+</doc>

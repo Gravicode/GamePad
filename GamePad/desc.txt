@@ -1,0 +1,12 @@
+splash:ok
+main menu:ok
+game screen
+camera screen > Register
+my room :ok
+message screen 
+
+Splash,MainMenu,Game,Camera,Register,MyRoom,Inbox 
+
+REM DIGITALWRITE 1 TRUE
+REM ANALOGWRITE 1 0.2
+
