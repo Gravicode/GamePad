@@ -580,6 +580,7 @@ namespace GamePad
                     ImgFull.Visible = true;
                     ImgFull.Bitmap = bmp;
                     ImgFull.Invalidate();
+                    
                     Thread.Sleep(3000);
                     CallFormRequestEvent(ScreenTypes.MainMenu);
                 }
@@ -955,6 +956,62 @@ namespace GamePad
         private int NewMessageCounter = 0;
         Hashtable Screens { set; get; }
 
+        #region Tunes
+        void NotifySound()
+        {
+            Tunes.MusicNote note = new Tunes.MusicNote(Tunes.Tone.C4, 400);
+
+            tunes.AddNote(note);
+
+            // up
+            //PlayNote(Tunes.Tone.C4);
+            //PlayNote(Tunes.Tone.D4);
+            //PlayNote(Tunes.Tone.E4);
+            //PlayNote(Tunes.Tone.F4);
+            //PlayNote(Tunes.Tone.G4);
+            //PlayNote(Tunes.Tone.A4);
+            //PlayNote(Tunes.Tone.B4);
+            //PlayNote(Tunes.Tone.C5);
+
+            //// back down
+            //PlayNote(Tunes.Tone.B4);
+            //PlayNote(Tunes.Tone.A4);
+            //PlayNote(Tunes.Tone.G4);
+            //PlayNote(Tunes.Tone.F4);
+            //PlayNote(Tunes.Tone.E4);
+            //PlayNote(Tunes.Tone.D4);
+            //PlayNote(Tunes.Tone.C4);
+
+            //// arpeggio
+            //PlayNote(Tunes.Tone.E4);
+            //PlayNote(Tunes.Tone.G4);
+            //PlayNote(Tunes.Tone.C5);
+            //PlayNote(Tunes.Tone.G4);
+            //PlayNote(Tunes.Tone.E4);
+            //PlayNote(Tunes.Tone.C4);
+
+            //tunes.Play();
+
+            //Thread.Sleep(100);
+
+            PlayNote(Tunes.Tone.E4);
+            PlayNote(Tunes.Tone.G4);
+            PlayNote(Tunes.Tone.C5);
+            PlayNote(Tunes.Tone.G4);
+            PlayNote(Tunes.Tone.E4);
+            PlayNote(Tunes.Tone.C4);
+
+            tunes.Play();
+
+        }
+        void PlayNote(Tunes.Tone tone)
+        {
+            Tunes.MusicNote note = new Tunes.MusicNote(tone, 200);
+
+            tunes.AddNote(note);
+        }
+        #endregion
+
         #region Networking
 
         private void NetworkChange_NetworkAddressChanged(object sender, EventArgs e)
@@ -1120,6 +1177,7 @@ namespace GamePad
             cellularRadio.RequestPhoneActivity();
             cellularRadio.SmsReceived += (CellularRadio sender, CellularRadio.Sms message) =>
             {
+                NotifySound();
                 try
                 {
                     if (sdCard.IsCardInserted && sdCard.IsCardMounted)
